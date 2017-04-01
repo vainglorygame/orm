@@ -23,7 +23,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     time_from_start: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+      allowNull: true
     }
   }, {
     tableName: 'participant_item_use',
