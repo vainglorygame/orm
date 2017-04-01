@@ -20,4 +20,5 @@ auto.run(function (err) {
 
   console.log(auto.tables); // table list
   console.log(auto.foreignKeys); // foreign key list
+  console.error("don't forget to s,literal('CURRENT_TIMESTAMP'),fn('NOW')");
 });
