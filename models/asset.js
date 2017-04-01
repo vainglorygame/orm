@@ -8,38 +8,42 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true,
       autoIncrement: true
     },
-    api_id: {
-      type: DataTypes.STRING(191),
-      allowNull: false,
-      unique: true
-    },
     match_api_id: {
       type: DataTypes.STRING(191),
       allowNull: false
     },
-    url: {
+    api_id: {
       type: DataTypes.STRING(191),
       allowNull: false
     },
-    content_type: {
-      type: DataTypes.STRING(191),
-      allowNull: false
-    },
-    created_at: {
-      type: DataTypes.TIME,
-      allowNull: false
-    },
-    description: {
-      type: DataTypes.STRING(191),
-      allowNull: false
-    },
-    filename: {
+    type: {
       type: DataTypes.STRING(191),
       allowNull: false
     },
     name: {
       type: DataTypes.STRING(191),
       allowNull: false
+    },
+    url: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    content_type: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    created_at: {
+      type: DataTypes.TIME,
+      allowNull: false,
+      defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
+    },
+    description: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    filename: {
+      type: DataTypes.STRING(191),
+      allowNull: true
     }
   }, {
     tableName: 'asset',
