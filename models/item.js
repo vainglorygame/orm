@@ -16,6 +16,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TIME,
       allowNull: true
     },
+    api_id: {
+      type: DataTypes.STRING(191),
+      allowNull: false
+    },
     series: {
       type: DataTypes.STRING(191),
       allowNull: false

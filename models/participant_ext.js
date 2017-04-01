@@ -8,10 +8,6 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true,
       autoIncrement: true
     },
-    series: {
-      type: DataTypes.STRING(191),
-      allowNull: false
-    },
     participant_api_id: {
       type: DataTypes.STRING(191),
       allowNull: false,

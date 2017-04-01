@@ -11,38 +11,6 @@ module.exports = function(sequelize, DataTypes) {
     roster_api_id: {
       type: DataTypes.STRING(191),
       allowNull: false
-    },
-    kills: {
-      type: DataTypes.INTEGER(11),
-      allowNull: false
-    },
-    assists: {
-      type: DataTypes.INTEGER(11),
-      allowNull: false
-    },
-    deaths: {
-      type: DataTypes.INTEGER(11),
-      allowNull: false
-    },
-    gold: {
-      type: DataTypes.INTEGER(11),
-      allowNull: false
-    },
-    kraken_captures: {
-      type: DataTypes.INTEGER(11),
-      allowNull: false
-    },
-    side: {
-      type: DataTypes.STRING(191),
-      allowNull: false
-    },
-    turret_captures: {
-      type: DataTypes.INTEGER(11),
-      allowNull: false
-    },
-    turrets_remaining: {
-      type: DataTypes.INTEGER(11),
-      allowNull: false
     }
   }, {
     tableName: 'roster_ext',
