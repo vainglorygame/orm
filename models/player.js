@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     shard_id: {
       type: DataTypes.STRING(191),
-      allowNull: true
+      allowNull: false
     },
     api_id: {
       type: DataTypes.STRING(191),

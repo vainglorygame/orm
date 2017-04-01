@@ -4,7 +4,9 @@ module.exports = function(sequelize, DataTypes) {
   return sequelize.define('player_ext', {
     id: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
     },
     player_api_id: {
       type: DataTypes.STRING(191),
@@ -13,35 +15,35 @@ module.exports = function(sequelize, DataTypes) {
     },
     played: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+       allowNull: true
     },
     played_ranked: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+       allowNull: true
     },
     played_casual: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+       allowNull: true
     },
     played_brawl: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+       allowNull: true
     },
     wins: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+       allowNull: true
     },
     wins_ranked: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+       allowNull: true
     },
     wins_casual: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+       allowNull: true
     },
     wins_brawl: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+       allowNull: true
     },
     skill_tier: {
       type: DataTypes.STRING(191),
@@ -49,7 +51,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     streak: {
       type: DataTypes.STRING(191),
-      allowNull: false
+      allowNull: true
     }
   }, {
     tableName: 'player_ext',
