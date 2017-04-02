@@ -10,8 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     participant_api_id: {
       type: DataTypes.STRING(191),
-      allowNull: false,
-      unique: true
+      allowNull: false
     },
     item_id: {
       type: DataTypes.STRING(191),
