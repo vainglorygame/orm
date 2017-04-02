@@ -12,5 +12,8 @@ module.exports = (seq, Seq) => {
         PlayerExt = seq.import("./models/player_ext.js"),
         Item = seq.import("./models/item.js");
 
+    Roster.belongsTo(Match, { foreignKey: "match_api_id", targetKey: "api_id" });
+    Participant.belongsTo(Roster, { foreignKey: "roster_api_id", targetKey: "api_id" });
+
     return {Match, Roster, Participant, ParticipantExt, ParticipantItemUse, Player, PlayerExt, Asset, Item};
 };
