@@ -1,7 +1,7 @@
 /* jshint indent: 2 */
 
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('participant_item_use', {
+  return sequelize.define('item_participant', {
     id: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: false,
@@ -25,7 +25,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     }
   }, {
-    tableName: 'participant_item_use',
+    tableName: 'item_participant',
     timestamps: false,
     underscored: true,
     freezeTableName: true
