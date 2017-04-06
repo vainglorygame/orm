@@ -12,11 +12,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(191),
       allowNull: false
     },
-    name: {
-      type: DataTypes.STRING(191),
-      allowNull: false
-    },
-    value: {
+    filter: {
       type: DataTypes.STRING(191),
       allowNull: false
     }
