@@ -1,26 +1,19 @@
 /* jshint indent: 2 */
 
-var JsonField = require("sequelize-json");
-
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('stats_dimensions', {
+  return sequelize.define('role', {
     id: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
-    dimension_on: {
+    name: {
       type: DataTypes.STRING(191),
       allowNull: false
-    },
-    filter_hash: {
-      type: DataTypes.STRING(191),
-      allowNull: false
-    },
-    filter: JsonField(sequelize, "stats_dimensions", "filter")
+    }
   }, {
-    tableName: 'stats_dimensions',
+    tableName: 'role',
     timestamps: false,
     underscored: true,
     freezeTableName: true

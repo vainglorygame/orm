@@ -8,37 +8,34 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true,
       autoIncrement: true
     },
+    shard_id: {
+      type: DataTypes.STRING(5),
+      allowNull: false
+    },
     api_id: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.CHAR(36),
       allowNull: false,
       unique: true
     },
-    shard_id: {
-      type: DataTypes.STRING(191),
-      allowNull: false
-    },
-    series: {
-      type: DataTypes.STRING(191),
-      allowNull: true
-    },
     created_at: {
       type: DataTypes.TIME,
-      allowNull: false
+      allowNull: false,
+      defaultValue: sequelize.fn('NOW')
     },
     duration: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.INTEGER(5).UNSIGNED,
       allowNull: false
     },
     game_mode: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.STRING(16),
       allowNull: false
     },
     end_game_reason: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.STRING(16),
       allowNull: false
     },
     queue: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.STRING(16),
       allowNull: false
     }
   }, {

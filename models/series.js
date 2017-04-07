@@ -1,36 +1,27 @@
 /* jshint indent: 2 */
 
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('participant_ext', {
+  return sequelize.define('series', {
     id: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
-    participant_api_id: {
+    name: {
       type: DataTypes.STRING(191),
-      allowNull: false,
-      unique: true
+      allowNull: false
     },
-    role: {
-      type: DataTypes.STRING(191),
+    start: {
+      type: DataTypes.TIME,
       allowNull: true
     },
-    score: {
-      type: "DOUBLE(8,2)",
-      allowNull: true
-    },
-    kda: {
-      type: "DOUBLE(8,2)",
-      allowNull: true
-    },
-    kills_participation: {
-      type: "DOUBLE(8,2)",
+    end: {
+      type: DataTypes.TIME,
       allowNull: true
     }
   }, {
-    tableName: 'participant_ext',
+    tableName: 'series',
     timestamps: false,
     underscored: true,
     freezeTableName: true

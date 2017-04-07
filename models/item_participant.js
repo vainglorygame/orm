@@ -8,8 +8,8 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true,
       autoIncrement: true
     },
-    participant_api_id: {
-      type: DataTypes.STRING(191),
+    participant_stats_id: {
+      type: DataTypes.CHAR(36),
       allowNull: false
     },
     item_id: {
@@ -17,11 +17,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     action: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.ENUM('grant','sell','use','final'),
       allowNull: false
     },
     time_from_start: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.INTEGER(5).UNSIGNED,
       allowNull: true
     }
   }, {

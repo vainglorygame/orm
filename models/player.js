@@ -9,17 +9,13 @@ module.exports = function(sequelize, DataTypes) {
       autoIncrement: true
     },
     shard_id: {
-      type: DataTypes.STRING(191),
-      allowNull: true
+      type: DataTypes.STRING(5),
+      allowNull: false
     },
     api_id: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.CHAR(36),
       allowNull: false,
       unique: true
-    },
-    created_at: {
-      type: DataTypes.TIME,
-      allowNull: true
     },
     name: {
       type: DataTypes.STRING(191),
