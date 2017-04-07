@@ -17,48 +17,48 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     participant_api_id: {
-      type: DataTypes.BIGINT,
+      type: DataTypes.STRING(191),
       allowNull: false
     },
     kills: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     deaths: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     assists: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     minion_kills: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     jungle_kills: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     non_jungle_minion_kills: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     crystal_mine_captures: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     gold_mine_captures: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     kraken_captures: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     turret_captures: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     gold: {
       type: DataTypes.INTEGER(8).UNSIGNED,

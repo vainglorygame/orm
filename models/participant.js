@@ -33,6 +33,14 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: false
     },
+    game_mode_id: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    role_id: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
     created_at: {
       type: DataTypes.TIME,
       allowNull: false
