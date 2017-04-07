@@ -16,7 +16,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TIME,
       allowNull: true
     },
-    participant_id: {
+    participant_api_id: {
       type: DataTypes.BIGINT,
       allowNull: false
     },

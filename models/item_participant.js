@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true,
       autoIncrement: true
     },
-    participant_stats_id: {
+    participant_api_id: {
       type: DataTypes.CHAR(36),
       allowNull: false
     },
