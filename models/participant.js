@@ -49,60 +49,12 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(16),
       allowNull: false
     },
-    kills: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
-    },
-    deaths: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
-    },
-    assists: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
-    },
-    farm: {
-      type: "DOUBLE(6,2)",
-      allowNull: false
-    },
-    gold: {
-      type: DataTypes.INTEGER(8).UNSIGNED,
-      allowNull: true
-    },
-    crystal_mine_captures: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
-    },
-    first_afk_time: {
-      type: "DOUBLE(12,4)",
-      allowNull: false
-    },
-    gold_mine_captures: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
-    },
-    jungle_kills: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
-    },
     karma_level: {
       type: DataTypes.INTEGER(3).UNSIGNED,
       allowNull: false
     },
-    kraken_captures: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
-    },
     level: {
       type: DataTypes.INTEGER(3).UNSIGNED,
-      allowNull: false
-    },
-    minion_kills: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
-    },
-    non_jungle_minion_kills: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
       allowNull: false
     },
     skill_tier: {
@@ -111,10 +63,6 @@ module.exports = function(sequelize, DataTypes) {
     },
     skin_key: {
       type: DataTypes.STRING(40),
-      allowNull: false
-    },
-    turret_captures: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
       allowNull: false
     },
     went_afk: {
