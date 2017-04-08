@@ -48,6 +48,10 @@ module.exports = function(sequelize, DataTypes) {
     turrets_remaining: {
       type: DataTypes.INTEGER(5).UNSIGNED,
       allowNull: false
+    },
+    winner: {
+      type: DataTypes.INTEGER(1),
+      allowNull: false
     }
   }, {
     tableName: 'roster',

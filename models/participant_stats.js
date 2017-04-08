@@ -16,8 +16,13 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TIME,
       allowNull: true
     },
+    final: {
+      type: DataTypes.INTEGER(1),
+      allowNull: false,
+      defaultValue: "1"
+    },
     participant_api_id: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.CHAR(36),
       allowNull: false
     },
     kills: {

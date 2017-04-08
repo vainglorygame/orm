@@ -40,6 +40,10 @@ module.exports = function(sequelize, DataTypes) {
     lifetime_gold: {
       type: "DOUBLE(8,2)",
       allowNull: false
+    },
+    skill_tier: {
+      type: DataTypes.INTEGER(5).UNSIGNED,
+      allowNull: true
     }
   }, {
     tableName: 'player',
