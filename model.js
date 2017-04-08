@@ -11,6 +11,10 @@ module.exports = (seq, Seq) => {
 
         // mappings
         Item = seq.import("./models/item.js"),
+        Hero = seq.import("./models/hero.js"),
+        Series = seq.import("./models/series.js"),
+        GameMode = seq.import("./models/game_mode.js"),
+        Role = seq.import("./models/role.js"),
 
         // Telemetry
         ItemParticipant = seq.import("./models/item_participant.js"),
@@ -26,7 +30,7 @@ module.exports = (seq, Seq) => {
 
     return {
         Match, Roster, Participant, Player, Asset,
-        Item,
+        Item, Hero, Series, GameMode, Role,
         ItemParticipant,
         ParticipantStats
     };
