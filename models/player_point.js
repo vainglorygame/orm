@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     shard_id: {
       type: DataTypes.STRING(5),
-      allowNull: false
+      allowNull: true
     },
     player_id: {
       type: DataTypes.BIGINT,
@@ -18,23 +18,23 @@ module.exports = function(sequelize, DataTypes) {
     },
     pick_rate: {
       type: "DOUBLE(8,2)",
-      allowNull: false
+      allowNull: true
     },
     played: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+      allowNull: true
     },
     wins: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+      allowNull: true
     },
     time_spent: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+      allowNull: true
     },
     win_rate: {
       type: "DOUBLE(8,2)",
-      allowNull: false
+      allowNull: true
     },
     series_id: {
       type: DataTypes.BIGINT,
@@ -44,7 +44,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BIGINT,
       allowNull: false
     },
-    actor_id: {
+    hero_id: {
       type: DataTypes.BIGINT,
       allowNull: false
     },
@@ -54,51 +54,51 @@ module.exports = function(sequelize, DataTypes) {
     },
     updated_at: {
       type: DataTypes.DATE,
-      allowNull: false
+      allowNull: true
     },
     created_at: {
       type: DataTypes.TIME,
-      allowNull: false
+      allowNull: true
     },
     kills: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     deaths: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     assists: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     minion_kills: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     jungle_kills: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     non_jungle_minion_kills: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     crystal_mine_captures: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     gold_mine_captures: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     kraken_captures: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     turret_captures: {
       type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
+      allowNull: true
     },
     gold: {
       type: DataTypes.INTEGER(8).UNSIGNED,
