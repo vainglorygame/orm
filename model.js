@@ -36,7 +36,6 @@ module.exports = (seq, Seq) => {
     Participant.belongsTo(Hero, { foreignKey: "hero_id" });
     Participant.belongsTo(Series, { foreignKey: "series_id" });
     Participant.belongsTo(Role, { foreignKey: "role_id" });
-    Participant.belongsTo(Filter, { foreignKey: "filter_id" });
     ParticipantStats.belongsTo(Participant, { foreignKey: "participant_api_id", "targetKey": "api_id" });
     ItemParticipant.belongsTo(Item, { foreignKey: "item_id", targetKey: "id" });
 

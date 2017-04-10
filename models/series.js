@@ -12,6 +12,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(191),
       allowNull: false
     },
+    dimension_on: {
+      type: DataTypes.STRING(191),
+      allowNull: false
+    },
     start: {
       type: DataTypes.TIME,
       allowNull: true

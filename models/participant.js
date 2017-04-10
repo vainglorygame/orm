@@ -25,6 +25,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.CHAR(36),
       allowNull: false
     },
+    match_api_id: {
+      type: DataTypes.CHAR(36),
+      allowNull: false
+    },
     hero_id: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: false
@@ -38,6 +42,10 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     role_id: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    filter_id: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: false
     },
@@ -66,7 +74,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     skill_tier: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
+      type: DataTypes.INTEGER(6),
       allowNull: false
     },
     skin_key: {

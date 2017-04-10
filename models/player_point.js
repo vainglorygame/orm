@@ -8,10 +8,6 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true,
       autoIncrement: true
     },
-    shard_id: {
-      type: DataTypes.STRING(5),
-      allowNull: true
-    },
     player_id: {
       type: DataTypes.BIGINT,
       allowNull: false

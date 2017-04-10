@@ -12,7 +12,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(191),
       allowNull: false
     },
-    filter_on: {
+    dimension_on: {
       type: DataTypes.STRING(191),
       allowNull: false
     },

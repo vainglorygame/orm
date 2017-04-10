@@ -42,7 +42,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     skill_tier: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
+      type: DataTypes.INTEGER(6),
       allowNull: true
     }
   }, {
