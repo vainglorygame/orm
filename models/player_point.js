@@ -112,14 +112,6 @@ module.exports = function(sequelize, DataTypes) {
       type: "DOUBLE(5,5)",
       allowNull: true
     },
-    cs_per_min: {
-      type: "DOUBLE(7,5)",
-      allowNull: true
-    },
-    kills_per_min: {
-      type: "DOUBLE(6,5)",
-      allowNull: true
-    },
     impact_score: {
       type: DataTypes.INTEGER(3).UNSIGNED,
       allowNull: true

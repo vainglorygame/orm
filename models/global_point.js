@@ -20,14 +20,6 @@ module.exports = function(sequelize, DataTypes) {
       type: "DOUBLE(8,2)",
       allowNull: false
     },
-    gold_per_min: {
-      type: "DOUBLE(8,2)",
-      allowNull: false
-    },
-    cs_per_min: {
-      type: "DOUBLE(8,2)",
-      allowNull: false
-    },
     series_id: {
       type: DataTypes.INTEGER(11),
       allowNull: false
