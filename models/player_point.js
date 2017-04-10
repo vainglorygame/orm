@@ -8,8 +8,8 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true,
       autoIncrement: true
     },
-    player_id: {
-      type: DataTypes.BIGINT,
+    player_api_id: {
+      type: DataTypes.CHAR(36),
       allowNull: false
     },
     played: {
