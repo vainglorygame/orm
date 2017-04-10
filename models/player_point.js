@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
       autoIncrement: true
     },
     player_api_id: {
-      type: DataTypes.BIGINT,
+      type: DataTypes.CHAR(36),
       allowNull: false
     },
     played: {

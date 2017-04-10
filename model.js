@@ -16,6 +16,8 @@ module.exports = (seq, Seq) => {
         GameMode = seq.import("./models/game_mode.js"),
         Role = seq.import("./models/role.js"),
         Filter = seq.import("./models/filter.js"),
+        Skilltier = seq.import("./models/skill_tier.js"),
+        Build = seq.import("./models/build.js"),
 
         // Telemetry
         ItemParticipant = seq.import("./models/item_participant.js"),
@@ -44,7 +46,7 @@ module.exports = (seq, Seq) => {
 
     return {
         Match, Roster, Participant, Player, Asset,
-        Item, Hero, Series, GameMode, Role, Filter,
+        Item, Hero, Series, GameMode, Role, Filter, Skilltier, Build,
         ItemParticipant,
         ParticipantStats,
         PlayerPoint, GlobalPoint,

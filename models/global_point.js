@@ -34,7 +34,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     build_id: {
       type: DataTypes.BIGINT,
-      allowNull: false
+      allowNull: true
     },
     played: {
       type: DataTypes.BIGINT,
