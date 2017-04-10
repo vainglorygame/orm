@@ -30,7 +30,10 @@ module.exports = (seq, Seq) => {
         GlobalPoint = seq.import("./models/global_point.js"),
 
         // registered special users
-        Gamer = seq.import("./models/gamer.js");
+        Gamer = seq.import("./models/gamer.js"),
+
+        // misc
+        Keys = seq.import("./models/keys.js");
 
 
     Roster.belongsTo(Match, { foreignKey: "match_api_id", targetKey: "api_id" });
@@ -50,6 +53,7 @@ module.exports = (seq, Seq) => {
         ItemParticipant,
         ParticipantStats,
         PlayerPoint, GlobalPoint,
-        Gamer
+        Gamer,
+        Keys
     };
 };
