@@ -156,7 +156,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(3).UNSIGNED,
       allowNull: true
     },
-    peal_score: {
+    peel_score: {
       type: DataTypes.INTEGER(3).UNSIGNED,
       allowNull: true
     },
