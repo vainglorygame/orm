@@ -12,10 +12,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BIGINT,
       allowNull: false
     },
-    pick_rate: {
-      type: "DOUBLE(8,2)",
-      allowNull: true
-    },
     played: {
       type: DataTypes.INTEGER(11),
       allowNull: true
@@ -28,11 +24,11 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(11),
       allowNull: true
     },
-    win_rate: {
-      type: "DOUBLE(8,2)",
-      allowNull: true
-    },
     series_id: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    role_id: {
       type: DataTypes.BIGINT,
       allowNull: false
     },
@@ -50,11 +46,12 @@ module.exports = function(sequelize, DataTypes) {
     },
     updated_at: {
       type: DataTypes.DATE,
-      allowNull: true
+      allowNull: false
     },
     created_at: {
       type: DataTypes.TIME,
-      allowNull: true
+      allowNull: false,
+      defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
     },
     kills: {
       type: DataTypes.INTEGER(5).UNSIGNED,
