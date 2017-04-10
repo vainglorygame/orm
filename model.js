@@ -25,7 +25,10 @@ module.exports = (seq, Seq) => {
 
         // stats aggregations
         PlayerPoint = seq.import("./models/player_point.js"),
-        GlobalPoint = seq.import("./models/global_point.js");
+        GlobalPoint = seq.import("./models/global_point.js"),
+
+        // registered special users
+        Gamer = seq.import("./models/gamer.js");
 
 
     Roster.belongsTo(Match, { foreignKey: "match_api_id", targetKey: "api_id" });
@@ -44,6 +47,7 @@ module.exports = (seq, Seq) => {
         Item, Hero, Series, GameMode, Role, Filter,
         ItemParticipant,
         ParticipantStats,
-        PlayerPoint, GlobalPoint
+        PlayerPoint, GlobalPoint,
+        Gamer
     };
 };
