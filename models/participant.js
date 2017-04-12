@@ -57,10 +57,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(16),
       allowNull: false
     },
-    farm: {
-      type: "DOUBLE(6,2)",
-      allowNull: false
-    },
     first_afk_time: {
       type: "DOUBLE(12,4)",
       allowNull: false
