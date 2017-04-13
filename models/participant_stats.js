@@ -25,6 +25,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.CHAR(36),
       allowNull: false
     },
+    farm: {
+      type: "DOUBLE(6,2)",
+      allowNull: false
+    },
     kills: {
       type: DataTypes.INTEGER(5).UNSIGNED,
       allowNull: true
@@ -94,79 +98,79 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     impact_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     objective_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     damage_cp_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     damage_wp_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     sustain_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     farm_lane_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     kill_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     objective_lane_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     farm_jungle_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     peel_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     kill_assist_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     objective_jungle_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     vision_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     heal_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     assist_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     utility_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     synergy_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     build_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     },
     offmeta_score: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
+      type: "DOUBLE(6,5)",
       allowNull: true
     }
   }, {
