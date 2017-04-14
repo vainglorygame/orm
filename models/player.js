@@ -21,15 +21,15 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(191),
       allowNull: false
     },
-    created_at: {
-      type: DataTypes.TIME,
-      allowNull: true
-    },
     last_match_created_date: {
       type: DataTypes.TIME,
       allowNull: true
     },
     last_update: {
+      type: DataTypes.TIME,
+      allowNull: true
+    },
+    created_at: {
       type: DataTypes.TIME,
       allowNull: true
     },
@@ -39,7 +39,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     xp: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+      allowNull: true
     },
     lifetime_gold: {
       type: "DOUBLE(8,2)",

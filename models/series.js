@@ -23,6 +23,11 @@ module.exports = function(sequelize, DataTypes) {
     end: {
       type: DataTypes.TIME,
       allowNull: true
+    },
+    currentPatch: {
+      type: DataTypes.INTEGER(1),
+      allowNull: false,
+      defaultValue: "0"
     }
   }, {
     tableName: 'series',

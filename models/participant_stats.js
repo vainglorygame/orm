@@ -25,10 +25,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.CHAR(36),
       allowNull: false
     },
-    farm: {
-      type: "DOUBLE(6,2)",
-      allowNull: false
-    },
     kills: {
       type: DataTypes.INTEGER(5).UNSIGNED,
       allowNull: true
@@ -39,6 +35,10 @@ module.exports = function(sequelize, DataTypes) {
     },
     assists: {
       type: DataTypes.INTEGER(5).UNSIGNED,
+      allowNull: true
+    },
+    farm: {
+      type: DataTypes.INTEGER(8).UNSIGNED,
       allowNull: true
     },
     minion_kills: {
@@ -98,79 +98,79 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     impact_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     objective_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     damage_cp_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     damage_wp_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     sustain_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     farm_lane_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     kill_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     objective_lane_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     farm_jungle_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     peel_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     kill_assist_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     objective_jungle_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     vision_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     heal_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     assist_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     utility_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     synergy_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     build_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     },
     offmeta_score: {
-      type: "DOUBLE(6,5)",
+      type: "DOUBLE",
       allowNull: true
     }
   }, {
