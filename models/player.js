@@ -39,7 +39,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     xp: {
       type: DataTypes.INTEGER(11),
-      allowNull: true
+      allowNull: false
     },
     lifetime_gold: {
       type: "DOUBLE(8,2)",
