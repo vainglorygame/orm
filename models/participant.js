@@ -51,8 +51,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     created_at: {
       type: DataTypes.TIME,
-      allowNull: false,
-      defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
+      allowNull: false
     },
     actor: {
       type: DataTypes.STRING(16),
