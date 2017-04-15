@@ -77,10 +77,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(3).UNSIGNED,
       allowNull: true
     },
-    role: {
-      type: DataTypes.ENUM('captain','carry','jungler'),
-      allowNull: true
-    },
     kda_ratio: {
       type: "DOUBLE(5,5)",
       allowNull: true
