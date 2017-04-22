@@ -21,22 +21,6 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       defaultValue: "1"
     },
-    items: {
-      type: DataTypes.STRING(255),
-      allowNull: false
-    },
-    item_uses: {
-      type: DataTypes.STRING(255),
-      allowNull: false
-    },
-    item_grants: {
-      type: DataTypes.STRING(255),
-      allowNull: false
-    },
-    item_sells: {
-      type: DataTypes.STRING(255),
-      allowNull: false
-    },
     participant_api_id: {
       type: DataTypes.CHAR(36),
       allowNull: false
@@ -183,6 +167,22 @@ module.exports = function(sequelize, DataTypes) {
     },
     offmeta_score: {
       type: "DOUBLE",
+      allowNull: true
+    },
+    items: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    item_uses: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    item_grants: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    item_sells: {
+      type: DataTypes.STRING(191),
       allowNull: true
     }
   }, {
