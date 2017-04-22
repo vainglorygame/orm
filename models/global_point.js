@@ -36,6 +36,14 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BIGINT,
       allowNull: true
     },
+    role_id: {
+      type: DataTypes.BIGINT,
+      allowNull: true
+    },
+    region_id: {
+      type: DataTypes.BIGINT,
+      allowNull: true
+    },
     played: {
       type: DataTypes.BIGINT,
       allowNull: true

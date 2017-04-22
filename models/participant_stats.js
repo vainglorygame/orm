@@ -174,15 +174,15 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     item_uses: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.STRING(455),
       allowNull: true
     },
     item_grants: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.STRING(455),
       allowNull: true
     },
     item_sells: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.STRING(455),
       allowNull: true
     }
   }, {
