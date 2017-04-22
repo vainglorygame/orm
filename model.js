@@ -18,6 +18,7 @@ module.exports = (seq, Seq) => {
         Filter = seq.import("./models/filter.js"),
         Skilltier = seq.import("./models/skill_tier.js"),
         Build = seq.import("./models/build.js"),
+        Region = seq.import("./models/region.js"),
 
         // data stats
         ParticipantStats = seq.import("./models/participant_stats.js"),
@@ -44,7 +45,7 @@ module.exports = (seq, Seq) => {
 
     return {
         Match, Roster, Participant, Player, Asset,
-        Item, Hero, Series, GameMode, Role, Filter, Skilltier, Build,
+        Item, Hero, Series, GameMode, Role, Filter, Skilltier, Build, Region,
         ParticipantStats,
         PlayerPoint, GlobalPoint,
         Gamer,
