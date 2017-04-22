@@ -21,6 +21,10 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       defaultValue: "1"
     },
+    items: {
+      type: DataTypes.STRING(255),
+      allowNull: false
+    },
     participant_api_id: {
       type: DataTypes.CHAR(36),
       allowNull: false

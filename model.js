@@ -19,9 +19,6 @@ module.exports = (seq, Seq) => {
         Skilltier = seq.import("./models/skill_tier.js"),
         Build = seq.import("./models/build.js"),
 
-        // Telemetry
-        ItemParticipant = seq.import("./models/item_participant.js"),
-
         // data stats
         ParticipantStats = seq.import("./models/participant_stats.js"),
 
@@ -38,19 +35,16 @@ module.exports = (seq, Seq) => {
 
     Roster.belongsTo(Match, { foreignKey: "match_api_id", targetKey: "api_id" });
     Participant.belongsTo(Roster, { foreignKey: "roster_api_id", targetKey: "api_id" });
-    Participant.hasMany(ItemParticipant, { as: "items", foreignKey: "participant_api_id", sourceKey: "api_id" });
     Participant.hasMany(ParticipantStats, { as: "participant_stats", foreignKey: "participant_api_id", sourceKey: "api_id" });
     Participant.belongsTo(GameMode, { foreignKey: "game_mode_id" });
     Participant.belongsTo(Hero, { foreignKey: "hero_id" });
     Participant.belongsTo(Series, { foreignKey: "series_id" });
     Participant.belongsTo(Role, { foreignKey: "role_id" });
     ParticipantStats.belongsTo(Participant, { foreignKey: "participant_api_id", "targetKey": "api_id" });
-    ItemParticipant.belongsTo(Item, { foreignKey: "item_id", targetKey: "id" });
 
     return {
         Match, Roster, Participant, Player, Asset,
         Item, Hero, Series, GameMode, Role, Filter, Skilltier, Build,
-        ItemParticipant,
         ParticipantStats,
         PlayerPoint, GlobalPoint,
         Gamer,
