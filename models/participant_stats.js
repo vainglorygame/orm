@@ -184,6 +184,10 @@ module.exports = function(sequelize, DataTypes) {
     item_sells: {
       type: DataTypes.STRING(455),
       allowNull: true
+    },
+    duration: {
+      type: DataTypes.INTEGER(5).UNSIGNED,
+      allowNull: false
     }
   }, {
     tableName: 'participant_stats',
