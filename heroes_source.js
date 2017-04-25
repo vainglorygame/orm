@@ -17,6 +17,10 @@ module.exports = [
     "serverName": "*Baron*"
   },
   {
+    "name": "Baptiste",
+    "serverName": "*Baptiste*"
+  },
+  {
     "name": "Blackfeather",
     "serverName": "*Blackfeather*"
   },
