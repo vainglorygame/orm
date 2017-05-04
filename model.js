@@ -9,6 +9,15 @@ module.exports = (seq, Seq) => {
         Participant = seq.import("./models/participant.js"),
         Player = seq.import("./models/player.js"),
 
+        // Guilds
+        Team = seq.import("./models/team.js"),
+        TeamMembership = seq.import("./models/team_membership.js"),
+        User = seq.import("./models/users.js"),
+
+        // Tournament
+        Tournament = seq.import("./models/tournament.js"),
+        TournamentParticipants = seq.import("./models/tournament_participants.js"),
+
         // mappings
         Item = seq.import("./models/item.js"),
         Hero = seq.import("./models/hero.js"),
@@ -44,10 +53,12 @@ module.exports = (seq, Seq) => {
     Participant.belongsTo(Role, { foreignKey: "role_id" });
     Participant.belongsTo(Region, { foreignKey: "shard_id", targetKey: "name" });
     */
-    ParticipantStats.belongsTo(Participant, { foreignKey: "participant_api_id", "targetKey": "api_id" });
+    ParticipantStats.belongsTo(Participant, { foreignKey: "participant_api_id", targetKey: "api_id" });
 
     return {
         Match, Roster, Participant, Player, Asset,
+        Team, TeamMembership, User,
+        Tournament, TournamentParticipants,
         Item, Hero, Series, GameMode, Role, Filter, Skilltier, Build, Region,
         ParticipantStats,
         PlayerPoint, GlobalPoint,
