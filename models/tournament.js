@@ -1,19 +1,27 @@
 /* jshint indent: 2 */
 
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('series', {
+  return sequelize.define('tournament', {
     id: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
+    api_id: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
     name: {
       type: DataTypes.STRING(191),
       allowNull: false
     },
-    dimension_on: {
-      type: DataTypes.STRING(191),
+    status: {
+      type: DataTypes.ENUM('planned','active','finished'),
+      allowNull: false
+    },
+    type: {
+      type: DataTypes.ENUM('players','team'),
       allowNull: false
     },
     start: {
@@ -23,18 +31,9 @@ module.exports = function(sequelize, DataTypes) {
     end: {
       type: DataTypes.TIME,
       allowNull: true
-    },
-    currentPatch: {
-      type: DataTypes.INTEGER(1),
-      allowNull: false,
-      defaultValue: "0"
-    },
-    show_in_web: {
-      type: DataTypes.INTEGER(1),
-      allowNull: false
     }
   }, {
-    tableName: 'series',
+    tableName: 'tournament',
     timestamps: false,
     underscored: true,
     freezeTableName: true
