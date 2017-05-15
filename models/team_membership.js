@@ -26,7 +26,7 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
     },
     status: {
-      type: DataTypes.ENUM('pending','initiate','member','officer','leader','former'),
+      type: DataTypes.ENUM('pending','initiate','member','officer','leader','former','veteran'),
       allowNull: false
     },
     fame: {

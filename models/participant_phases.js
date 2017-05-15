@@ -1,7 +1,7 @@
 /* jshint indent: 2 */
 
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('participant_stats', {
+  return sequelize.define('participant_phases', {
     id: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: false,
@@ -15,6 +15,10 @@ module.exports = function(sequelize, DataTypes) {
     updated_at: {
       type: DataTypes.TIME,
       allowNull: true
+    },
+    duration: {
+      type: DataTypes.INTEGER(5).UNSIGNED,
+      allowNull: false
     },
     participant_api_id: {
       type: DataTypes.CHAR(36),
@@ -66,6 +70,14 @@ module.exports = function(sequelize, DataTypes) {
     },
     gold: {
       type: DataTypes.INTEGER(8).UNSIGNED,
+      allowNull: true
+    },
+    hero_dps: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    non_hero_dps: {
+      type: "DOUBLE",
       allowNull: true
     },
     hero_level: {
@@ -163,37 +175,9 @@ module.exports = function(sequelize, DataTypes) {
     offmeta_score: {
       type: "DOUBLE",
       allowNull: true
-    },
-    items: {
-      type: DataTypes.STRING(191),
-      allowNull: true
-    },
-    item_uses: {
-      type: DataTypes.STRING(455),
-      allowNull: true
-    },
-    item_grants: {
-      type: DataTypes.STRING(455),
-      allowNull: true
-    },
-    item_sells: {
-      type: DataTypes.STRING(455),
-      allowNull: true
-    },
-    duration: {
-      type: DataTypes.INTEGER(5).UNSIGNED,
-      allowNull: false
-    },
-    hero_dps: {
-      type: "DOUBLE",
-      allowNull: true
-    },
-    non_hero_dps: {
-      type: "DOUBLE",
-      allowNull: true
     }
   }, {
-    tableName: 'participant_stats',
+    tableName: 'participant_phases',
     timestamps: false,
     underscored: true,
     freezeTableName: true
