@@ -43,11 +43,12 @@ module.exports.request = async (url, options, logger) => {
                 logger.warn("rate limited, sleeping");
                 await sleep(100);  // no return, no break => retry
                 continue;
-            } else if (err.statusCode != 404) {
+            } else if (err.statusCode >= 500) {
                 logger.error("API error, retrying", err);
                 await sleep(100);
                 continue;
-            }
+            } else if (err.statusCode != 404)
+                logger.error("Unexpected API response", err);
             logger.warn("not found", {
                 uri: err.options.uri,
                 qs: err.options.qs,
@@ -55,12 +56,13 @@ module.exports.request = async (url, options, logger) => {
             });
             return [undefined, undefined];
         } finally {
-            logger.info("API response", {
-                status: response.statusCode,
-                connection_start: response.timings.connect,
-                connection_end: response.timings.end,
-                ratelimit_remaining: parseInt(response.headers["x-ratelimit-remaining"])
-            });
+            if (response != undefined)  // else non-requests error
+                logger.info("API response", {
+                    status: response.statusCode,
+                    connection_start: response.timings.connect,
+                    connection_end: response.timings.end,
+                    ratelimit_remaining: parseInt(response.headers["x-ratelimit-remaining"])
+                });
         }
     }
 }
