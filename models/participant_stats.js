@@ -183,22 +183,6 @@ module.exports = function(sequelize, DataTypes) {
     duration: {
       type: DataTypes.INTEGER(5).UNSIGNED,
       allowNull: false
-    },
-    hero_damage_true: {
-      type: "DOUBLE",
-      allowNull: true
-    },
-    hero_damage_dealt: {
-      type: "DOUBLE",
-      allowNull: true
-    },
-    non_hero_damage: {
-      type: "DOUBLE",
-      allowNull: true
-    },
-    non_hero_dps_damage: {
-      type: "DOUBLE",
-      allowNull: true
     }
   }, {
     tableName: 'participant_stats',

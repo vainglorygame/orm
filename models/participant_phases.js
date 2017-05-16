@@ -76,20 +76,72 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(8).UNSIGNED,
       allowNull: true
     },
-    hero_damage_true: {
+    dmg_true_hero: {
       type: "DOUBLE",
       allowNull: true
     },
-    hero_damage_dealt: {
+    dmg_true_kraken: {
       type: "DOUBLE",
       allowNull: true
     },
-    non_hero_damage: {
+    dmg_true_turret: {
       type: "DOUBLE",
       allowNull: true
     },
-    non_hero_damage_dealt: {
+    dmg_true_vain_turret: {
       type: "DOUBLE",
+      allowNull: true
+    },
+    dmg_true_others: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    dmg_dealt_hero: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    dmg_dealt_kraken: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    dmg_dealt_turret: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    dmg_dealt_vain_turret: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    dmg_dealt_others: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    dmg_rcvd_dealt_hero: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    dmg_rcvd_true_hero: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    dmg_rcvd_dealt_others: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    dmg_rcvd_true_others: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    ability_a_level: {
+      type: DataTypes.INTEGER(3).UNSIGNED,
+      allowNull: true
+    },
+    ability_b_level: {
+      type: DataTypes.INTEGER(3).UNSIGNED,
+      allowNull: true
+    },
+    ability_c_level: {
+      type: DataTypes.INTEGER(3).UNSIGNED,
       allowNull: true
     },
     hero_level: {
