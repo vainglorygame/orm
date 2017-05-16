@@ -16,7 +16,11 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TIME,
       allowNull: true
     },
-    duration: {
+    start: {
+      type: DataTypes.INTEGER(5).UNSIGNED,
+      allowNull: false
+    },
+    end: {
       type: DataTypes.INTEGER(5).UNSIGNED,
       allowNull: false
     },
