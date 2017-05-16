@@ -31,6 +31,10 @@ module.exports = function(sequelize, DataTypes) {
     end: {
       type: DataTypes.TIME,
       allowNull: true
+    },
+    region: {
+      type: DataTypes.STRING(191),
+      allowNull: true
     }
   }, {
     tableName: 'tournament',

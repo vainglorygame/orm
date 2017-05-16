@@ -72,11 +72,19 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(8).UNSIGNED,
       allowNull: true
     },
-    hero_dps: {
+    hero_damage_true: {
       type: "DOUBLE",
       allowNull: true
     },
-    non_hero_dps: {
+    hero_damage_dealt: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    non_hero_damage: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    non_hero_damage_dealt: {
       type: "DOUBLE",
       allowNull: true
     },
