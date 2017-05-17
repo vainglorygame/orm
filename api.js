@@ -4,9 +4,12 @@
 const Promise = require("bluebird"),
     request = require("request-promise"),
     sleep = require("sleep-promise"),
+    fs = require("fs"),
     jsonapi = require("./jsonapi");
 
-const MADGLORY_TOKEN = process.env.MADGLORY_TOKEN;
+const MADGLORY_TOKEN = process.env.MADGLORY_TOKEN,
+    MADGLORY_URL = process.env.MADGLORY_URL || "https://api.dc01.gamelockerapp.com",
+    ERROR_LOG = process.env.ERROR_LOG || "./errors.json";
 if (MADGLORY_TOKEN == undefined) throw "Need an API token";
 
 const api = module.exports;
@@ -43,26 +46,32 @@ module.exports.request = async (url, options, logger) => {
                 logger.warn("rate limited, sleeping");
                 await sleep(100);  // no return, no break => retry
                 continue;
-            } else if (err.statusCode >= 500) {
-                logger.error("API error, retrying", err);
-                await sleep(100);
-                continue;
-            } else if (err.statusCode != 404)
-                logger.error("Unexpected API response", err);
+            } else if (err.statusCode != 404) {
+                logger.error("API error", {
+                    uri: url,
+                    qs: options,
+                    status: err.statusCode,
+                    error: response? response.body : err
+                });
+                fs.appendFileSync(ERROR_LOG, JSON.stringify(err) + "\n");
+            }
             logger.warn("not found", {
-                uri: err.options.uri,
-                qs: err.options.qs,
-                error: err.response.body
+                uri: url,
+                qs: options,
+                status: err.statusCode
             });
             return [undefined, undefined];
         } finally {
-            if (response != undefined)  // else non-requests error
+            if (response != undefined) {  // else non-requests error
                 logger.info("API response", {
+                    uri: url,
+                    qs: options,
                     status: response.statusCode,
                     connection_start: response.timings.connect,
                     connection_end: response.timings.end,
                     ratelimit_remaining: parseInt(response.headers["x-ratelimit-remaining"])
                 });
+            }
         }
     }
 }
@@ -84,4 +93,4 @@ module.exports.requests = async (endpoint, region, options, logger) => {
 }
 
 module.exports.url = (endpoint, region) =>
-    "https://api.dc01.gamelockerapp.com/shards/" + region + "/" + endpoint;
+    MADGLORY_URL + "/shards/" + region + "/" + endpoint;
