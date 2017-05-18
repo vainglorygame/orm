@@ -46,6 +46,8 @@ module.exports = (seq, Seq) => {
 
     Roster.belongsTo(Match, { foreignKey: "match_api_id", targetKey: "api_id" });
     Participant.belongsTo(Roster, { foreignKey: "roster_api_id", targetKey: "api_id" });
+    Participant.belongsTo(Match, { foreignKey: "match_api_id", targetKey: "api_id" });
+    Participant.belongsTo(Player, { foreignKey: "player_api_id", targetKey: "api_id" });
     Participant.hasMany(ParticipantStats, { as: "participant_stats", foreignKey: "participant_api_id", sourceKey: "api_id" });
     /*
     Participant.belongsTo(GameMode, { foreignKey: "game_mode_id" });
