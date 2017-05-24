@@ -48,6 +48,14 @@ module.exports = function(sequelize, DataTypes) {
     skill_tier: {
       type: DataTypes.INTEGER(6),
       allowNull: true
+    },
+    trueskill_mu: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_sigma: {
+      type: "DOUBLE",
+      allowNull: true
     }
   }, {
     tableName: 'player',

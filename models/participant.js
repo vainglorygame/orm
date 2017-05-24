@@ -84,6 +84,14 @@ module.exports = function(sequelize, DataTypes) {
     winner: {
       type: DataTypes.INTEGER(1),
       allowNull: false
+    },
+    trueskill_mu: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_sigma: {
+      type: "DOUBLE",
+      allowNull: true
     }
   }, {
     tableName: 'participant',
