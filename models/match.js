@@ -36,11 +36,11 @@ module.exports = function(sequelize, DataTypes) {
     queue: {
       type: DataTypes.STRING(16),
       allowNull: false
-    }/*,
+    },
     trueskill_quality: {
       type: "DOUBLE",
       allowNull: true
-    }*/
+    }
   }, {
     tableName: 'match',
     timestamps: false,
