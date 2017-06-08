@@ -1,47 +1,51 @@
 /* jshint indent: 2 */
 
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('build', {
+  return sequelize.define('ability', {
     id: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
+    created_at: {
+      type: DataTypes.TIME,
+      allowNull: true
+    },
+    updated_at: {
+      type: DataTypes.TIME,
+      allowNull: true
+    },
+    api_id: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    hero_id: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    ability: {
+      type: DataTypes.STRING(191),
+      allowNull: false
+    },
     name: {
       type: DataTypes.STRING(191),
       allowNull: false
     },
-    item_1: {
+    type: {
       type: DataTypes.STRING(191),
-      allowNull: true
+      allowNull: false
     },
-    item_2: {
+    active: {
       type: DataTypes.STRING(191),
-      allowNull: true
+      allowNull: false
     },
-    item_3: {
+    passive: {
       type: DataTypes.STRING(191),
-      allowNull: true
-    },
-    item_4: {
-      type: DataTypes.STRING(191),
-      allowNull: true
-    },
-    item_5: {
-      type: DataTypes.STRING(191),
-      allowNull: true
-    },
-    item_6: {
-      type: DataTypes.STRING(191),
-      allowNull: true
-    },
-    dimension_on: {
-      type: DataTypes.STRING(191),
-      allowNull: true
+      allowNull: false
     }
   }, {
-    tableName: 'build',
+    tableName: 'ability',
     timestamps: false,
     underscored: true,
     freezeTableName: true

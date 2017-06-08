@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
       autoIncrement: true
     },
     shard_id: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.STRING(5),
       allowNull: false
     },
     api_id: {
@@ -52,6 +52,10 @@ module.exports = function(sequelize, DataTypes) {
     winner: {
       type: DataTypes.INTEGER(1),
       allowNull: false
+    },
+    bans: {
+      type: DataTypes.STRING(191),
+      allowNull: true
     }
   }, {
     tableName: 'roster',

@@ -239,6 +239,38 @@ module.exports = function(sequelize, DataTypes) {
     offmeta_score: {
       type: "DOUBLE",
       allowNull: true
+    },
+    items: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    item_grants: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    item_sells: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    ability_levels: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    ability_uses: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    ability_damage: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    item_uses: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    player_damage: {
+      type: DataTypes.STRING(191),
+      allowNull: true
     }
   }, {
     tableName: 'participant_phases',

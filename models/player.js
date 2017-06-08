@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
       autoIncrement: true
     },
     shard_id: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.STRING(5),
       allowNull: false
     },
     api_id: {
@@ -19,7 +19,8 @@ module.exports = function(sequelize, DataTypes) {
     },
     name: {
       type: DataTypes.STRING(191),
-      allowNull: false
+      allowNull: false,
+      defaultValue: ""
     },
     last_match_created_date: {
       type: DataTypes.TIME,
@@ -48,7 +49,7 @@ module.exports = function(sequelize, DataTypes) {
     skill_tier: {
       type: DataTypes.INTEGER(6),
       allowNull: true
-    }/*,
+    },
     trueskill_mu: {
       type: "DOUBLE",
       allowNull: true
@@ -56,7 +57,11 @@ module.exports = function(sequelize, DataTypes) {
     trueskill_sigma: {
       type: "DOUBLE",
       allowNull: true
-    }*/
+    },
+    elo: {
+      type: "DOUBLE",
+      allowNull: true
+    }
   }, {
     tableName: 'player',
     timestamps: false,
