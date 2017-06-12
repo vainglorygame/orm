@@ -14,7 +14,7 @@ module.exports = function(sequelize, DataTypes) {
       unique: true
     },
     shard_id: {
-      type: DataTypes.STRING(5),
+      type: DataTypes.STRING(191),
       allowNull: false
     },
     match_api_id: {

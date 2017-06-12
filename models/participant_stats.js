@@ -183,6 +183,10 @@ module.exports = function(sequelize, DataTypes) {
     duration: {
       type: DataTypes.INTEGER(5).UNSIGNED,
       allowNull: false
+    },
+    nacl_score: {
+      type: "DOUBLE",
+      allowNull: true
     }
   }, {
     tableName: 'participant_stats',

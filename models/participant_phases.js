@@ -271,6 +271,18 @@ module.exports = function(sequelize, DataTypes) {
     player_damage: {
       type: DataTypes.STRING(191),
       allowNull: true
+    },
+    draft_position: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    ban: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    pick: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
     }
   }, {
     tableName: 'participant_phases',

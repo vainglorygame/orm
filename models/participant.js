@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
       autoIncrement: true
     },
     shard_id: {
-      type: DataTypes.STRING(5),
+      type: DataTypes.STRING(191),
       allowNull: false
     },
     api_id: {
@@ -94,6 +94,10 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     trueskill_delta: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    nacl_score: {
       type: "DOUBLE",
       allowNull: true
     }

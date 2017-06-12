@@ -12,7 +12,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(191),
       allowNull: true
     },
-    group_id: {
+    division_id: {
       type: DataTypes.INTEGER(11),
       allowNull: false
     },
@@ -22,7 +22,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     team_1_id: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+      allowNull: true
     },
     team_1_score: {
       type: DataTypes.INTEGER(11),
@@ -30,7 +30,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     team_2_id: {
       type: DataTypes.INTEGER(11),
-      allowNull: false
+      allowNull: true
     },
     team_2_score: {
       type: DataTypes.INTEGER(11),
