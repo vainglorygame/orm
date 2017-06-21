@@ -18,6 +18,13 @@ module.exports = {
      *
      */
 
+    "Ability__Grace__A": "Grace A",
+    "Ability__Grace__AltAttack": "Grace AA",
+    "Ability__Grace__B": "Grace B",
+    "Ability__Grace__DefaultAttack": "Grace AA",
+    "HERO_ABILITY_HERO042_A_NAME": "Grace A",
+    "HERO_ABILITY_HERO042_B_NAME": "Grace B",
+    "HERO_ABILITY_HERO042_C_NAME": "Grace C",
     "Ability__B_Bounce": "Ozo B",
     "AbilityB_Bounce": "Ozo B",
     "Ability__B_EndingAttack": "Ozo B",
@@ -72,9 +79,6 @@ module.exports = {
     "HERO_ABILITY_GLAIVE_AFTERBURN_NAME": "Glaive A",
     "HERO_ABILITY_GLAIVE_BLOODSONG_NAME": "Glaive C",
     "HERO_ABILITY_GLAIVE_TWISTED_STROKE_NAME": "Glaive B",
-    "HERO_ABILITY_GRACE_A_NAME": "Grace A",
-    "HERO_ABILITY_GRACE_B_NAME": "Grace B",
-    "HERO_ABILITY_GRACE_C_NAME": "Grace C",
     "HERO_ABILITY_GRUMPJAW_A_NAME": "Grumpjaw A",
     "HERO_ABILITY_GRUMPJAW_B_NAME": "Grumpjaw B",
     "HERO_ABILITY_GRUMPJAW_C_NAME": "Grumpjaw C",
