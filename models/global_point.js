@@ -40,6 +40,14 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BIGINT,
       allowNull: true
     },
+    enemy_hero_id: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    enemy_role_id: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
     region_id: {
       type: DataTypes.BIGINT,
       allowNull: true
@@ -67,6 +75,10 @@ module.exports = function(sequelize, DataTypes) {
     assists: {
       type: DataTypes.BIGINT,
       allowNull: true
+    },
+    farm: {
+      type: "DOUBLE",
+      allowNull: false
     },
     minion_kills: {
       type: DataTypes.BIGINT,
@@ -100,95 +112,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BIGINT,
       allowNull: true
     },
-    kda_ratio: {
-      type: "DOUBLE(20,5)",
-      allowNull: true
-    },
-    kill_participation: {
-      type: "DOUBLE(20,5)",
-      allowNull: true
-    },
-    cs_per_min: {
-      type: "DOUBLE(20,5)",
-      allowNull: true
-    },
-    kills_per_min: {
-      type: "DOUBLE(20,5)",
-      allowNull: true
-    },
     impact_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    objective_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    damage_cp_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    damage_wp_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    sustain_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    farm_lane_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    kill_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    objective_lane_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    farm_jungle_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    peel_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    kill_assist_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    objective_jungle_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    vision_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    heal_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    assist_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    utility_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    synergy_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    build_score: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    offmeta_score: {
       type: DataTypes.BIGINT,
       allowNull: true
     }

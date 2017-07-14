@@ -47,6 +47,14 @@ module.exports = function(sequelize, DataTypes) {
     winner_id: {
       type: DataTypes.INTEGER(11),
       allowNull: true
+    },
+    round: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    position: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
     }
   }, {
     tableName: 'event',

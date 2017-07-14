@@ -12,23 +12,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.CHAR(36),
       allowNull: false
     },
-    played: {
-      type: DataTypes.INTEGER(11),
-      allowNull: true
-    },
-    wins: {
-      type: DataTypes.INTEGER(11),
-      allowNull: true
-    },
-    time_spent: {
-      type: DataTypes.INTEGER(11),
-      allowNull: true
-    },
     series_id: {
-      type: DataTypes.BIGINT,
-      allowNull: false
-    },
-    role_id: {
       type: DataTypes.BIGINT,
       allowNull: false
     },
@@ -43,6 +27,22 @@ module.exports = function(sequelize, DataTypes) {
     game_mode_id: {
       type: DataTypes.BIGINT,
       allowNull: false
+    },
+    role_id: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    played: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    wins: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    time_spent: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
     },
     updated_at: {
       type: DataTypes.DATE,

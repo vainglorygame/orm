@@ -12,32 +12,60 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(191),
       allowNull: false
     },
-    item_1: {
+    dimension_on: {
       type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    database: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    item_1: {
+      type: DataTypes.BIGINT,
       allowNull: true
     },
     item_2: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.BIGINT,
       allowNull: true
     },
     item_3: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.BIGINT,
       allowNull: true
     },
     item_4: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.BIGINT,
       allowNull: true
     },
     item_5: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.BIGINT,
       allowNull: true
     },
     item_6: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.BIGINT,
       allowNull: true
     },
-    dimension_on: {
-      type: DataTypes.STRING(191),
+    item_1_count: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    item_2_count: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    item_3_count: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    item_4_count: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    item_5_count: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    item_6_count: {
+      type: DataTypes.INTEGER(11),
       allowNull: true
     }
   }, {

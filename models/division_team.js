@@ -24,12 +24,24 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(11),
       allowNull: false
     },
-    points: {
+    games_played: {
+      type: DataTypes.INTEGER(11),
+      allowNull: false
+    },
+    games_won: {
       type: DataTypes.INTEGER(11),
       allowNull: false
     },
     seed: {
       type: DataTypes.INTEGER(11),
+      allowNull: false
+    },
+    points: {
+      type: "DOUBLE",
+      allowNull: false
+    },
+    sub_division: {
+      type: DataTypes.STRING(191),
       allowNull: false
     }
   }, {

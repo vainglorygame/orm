@@ -19,6 +19,10 @@ module.exports = function(sequelize, DataTypes) {
     name: {
       type: DataTypes.STRING(191),
       allowNull: false
+    },
+    rank: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
     }
   }, {
     tableName: 'division',

@@ -19,7 +19,8 @@ module.exports = function(sequelize, DataTypes) {
     },
     created_at: {
       type: DataTypes.TIME,
-      allowNull: false
+      allowNull: false,
+      defaultValue: sequelize.fn('current_timestamp')
     },
     duration: {
       type: DataTypes.INTEGER(5).UNSIGNED,

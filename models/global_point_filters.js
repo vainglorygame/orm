@@ -1,31 +1,23 @@
 /* jshint indent: 2 */
 
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('tournament_participants', {
+  return sequelize.define('global_point_filters', {
     id: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
-    league_id: {
+    filter_id: {
       type: DataTypes.BIGINT,
       allowNull: false
     },
-    team_id: {
-      type: DataTypes.BIGINT,
-      allowNull: false
-    },
-    role_id: {
-      type: DataTypes.BIGINT,
-      allowNull: false
-    },
-    player_api_id: {
+    match_api_id: {
       type: DataTypes.CHAR(36),
       allowNull: false
     }
   }, {
-    tableName: 'tournament_participants',
+    tableName: 'global_point_filters',
     timestamps: false,
     underscored: true,
     freezeTableName: true

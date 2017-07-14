@@ -35,6 +35,14 @@ module.exports = function(sequelize, DataTypes) {
     status: {
       type: DataTypes.ENUM('planned','active','finished'),
       allowNull: false
+    },
+    phase: {
+      type: DataTypes.ENUM('pre-season','group','playoffs','finals'),
+      allowNull: false
+    },
+    rank: {
+      type: DataTypes.INTEGER(11),
+      allowNull: false
     }
   }, {
     tableName: 'stage',

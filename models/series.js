@@ -27,7 +27,7 @@ module.exports = function(sequelize, DataTypes) {
     currentPatch: {
       type: DataTypes.INTEGER(1),
       allowNull: false,
-      defaultValue: "0"
+      defaultValue: '0'
     },
     show_in_web: {
       type: DataTypes.INTEGER(1),

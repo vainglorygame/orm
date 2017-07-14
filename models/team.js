@@ -19,11 +19,7 @@ module.exports = function(sequelize, DataTypes) {
     created_at: {
       type: DataTypes.TIME,
       allowNull: false,
-      defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
-    },
-    tournament_id: {
-      type: DataTypes.BIGINT,
-      allowNull: true
+      defaultValue: sequelize.fn('current_timestamp')
     },
     name: {
       type: DataTypes.STRING(20),

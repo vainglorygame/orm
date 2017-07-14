@@ -17,8 +17,4 @@ var auto = new SequelizeAuto("vainweb", "vainweb", "vainweb", {
 
 auto.run(function (err) {
   if (err) throw err;
-
-  console.log(auto.tables); // table list
-  console.log(auto.foreignKeys); // foreign key list
-  console.error("don't forget to s,literal('CURRENT_TIMESTAMP'),fn('NOW')");
 });
