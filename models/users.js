@@ -31,6 +31,10 @@ module.exports = function(sequelize, DataTypes) {
     remember_token: {
       type: DataTypes.STRING(191),
       allowNull: true
+    },
+    access_type: {
+      type: DataTypes.ENUM('free','loyal','plus','premium'),
+      allowNull: false
     }
   }, {
     tableName: 'users',

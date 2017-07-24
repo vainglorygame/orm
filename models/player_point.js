@@ -8,6 +8,10 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true,
       autoIncrement: true
     },
+    updated_at: {
+      type: DataTypes.DATE,
+      allowNull: false
+    },
     player_api_id: {
       type: DataTypes.CHAR(36),
       allowNull: false
@@ -41,12 +45,24 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     time_spent: {
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    trueskill: {
+      type: "DOUBLE",
       allowNull: true
     },
-    updated_at: {
-      type: DataTypes.DATE,
-      allowNull: false
+    trueskill_mu: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_sigma: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    elo: {
+      type: "DOUBLE",
+      allowNull: true
     },
     kills: {
       type: DataTypes.INTEGER(10).UNSIGNED,
@@ -59,6 +75,10 @@ module.exports = function(sequelize, DataTypes) {
     assists: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: true
+    },
+    farm: {
+      type: "DOUBLE",
+      allowNull: false
     },
     minion_kills: {
       type: DataTypes.INTEGER(10).UNSIGNED,
@@ -92,99 +112,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: true
     },
-    hero_level: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    kda_ratio: {
-      type: "DOUBLE(10,5)",
-      allowNull: true
-    },
-    kill_participation: {
-      type: "DOUBLE(10,5)",
-      allowNull: true
-    },
-    cs_per_min: {
-      type: "DOUBLE(14,5)",
-      allowNull: true
-    },
-    kills_per_min: {
-      type: "DOUBLE(12,5)",
-      allowNull: true
-    },
     impact_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    objective_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    damage_cp_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    damage_wp_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    sustain_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    farm_lane_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    kill_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    objective_lane_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    farm_jungle_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    peel_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    kill_assist_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    objective_jungle_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    vision_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    heal_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    assist_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    utility_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    synergy_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    build_score: {
-      type: DataTypes.INTEGER(10).UNSIGNED,
-      allowNull: true
-    },
-    offmeta_score: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: true
     }
