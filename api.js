@@ -54,6 +54,7 @@ module.exports.request = async (url, options, logger) => {
                     error: response? response.body : err
                 });
                 fs.appendFileSync(ERROR_LOG, JSON.stringify(err) + "\n");
+                throw err;  // rethrow for services to catch and handle
             }
             logger.warn("not found", {
                 uri: url,
