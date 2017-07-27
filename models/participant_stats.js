@@ -168,16 +168,32 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(191),
       allowNull: true
     },
+    new_items: {
+      type: "BLOB",
+      allowNull: true
+    },
     item_uses: {
       type: DataTypes.STRING(455),
+      allowNull: true
+    },
+    new_item_uses: {
+      type: "BLOB",
       allowNull: true
     },
     item_grants: {
       type: DataTypes.STRING(455),
       allowNull: true
     },
+    new_item_grants: {
+      type: "BLOB",
+      allowNull: true
+    },
     item_sells: {
       type: DataTypes.STRING(455),
+      allowNull: true
+    },
+    new_item_sells: {
+      type: "BLOB",
       allowNull: true
     },
     duration: {
