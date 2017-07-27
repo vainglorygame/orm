@@ -48,7 +48,11 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BIGINT,
       allowNull: false
     },
-    trueskill: {
+    trueskill_max: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_delta: {
       type: "DOUBLE",
       allowNull: true
     },

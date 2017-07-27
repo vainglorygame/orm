@@ -60,6 +60,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BIGINT,
       allowNull: true
     },
+    trueskill_delta: {
+      type: "DOUBLE",
+      allowNull: true
+    },
     time_spent: {
       type: DataTypes.BIGINT,
       allowNull: true

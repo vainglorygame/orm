@@ -16,13 +16,13 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BIGINT,
       allowNull: false
     },
-    role_id: {
-      type: DataTypes.BIGINT,
-      allowNull: false
-    },
     player_api_id: {
       type: DataTypes.CHAR(36),
       allowNull: false
+    },
+    role_id: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
     }
   }, {
     tableName: 'tournament_participants',
