@@ -48,15 +48,24 @@ module.exports = (seq, Seq) => {
     Participant.belongsTo(Roster, { foreignKey: "roster_api_id", targetKey: "api_id" });
     Participant.belongsTo(Match, { foreignKey: "match_api_id", targetKey: "api_id" });
     Participant.belongsTo(Player, { foreignKey: "player_api_id", targetKey: "api_id" });
-    Participant.hasOne(ParticipantStats, { as: "participant_stats", foreignKey: "participant_api_id", sourceKey: "api_id" });
-    /*
+    Participant.hasMany(ParticipantStats, { foreignKey: "participant_api_id", sourceKey: "api_id" });
+    Participant.hasMany(ParticipantPhases, { foreignKey: "participant_api_id", sourceKey: "api_id" });
+    ParticipantPhases.belongsTo(Participant, { foreignKey: "participant_api_id", targetKey: "api_id" });
     Participant.belongsTo(GameMode, { foreignKey: "game_mode_id" });
     Participant.belongsTo(Hero, { foreignKey: "hero_id" });
     Participant.belongsTo(Series, { foreignKey: "series_id" });
     Participant.belongsTo(Role, { foreignKey: "role_id" });
     Participant.belongsTo(Region, { foreignKey: "shard_id", targetKey: "name" });
-    */
-    ParticipantStats.belongsTo(Participant, { foreignKey: "participant_api_id", targetKey: "api_id" });
+    Match.hasMany(Asset, { foreignKey: "match_api_id", sourceKey: "api_id",  });  // TODO with hasOne, suddenly uses match.id as source key?!
+    Match.hasMany(Roster, { foreignKey: "match_api_id", sourceKey: "api_id" });
+    Roster.hasMany(Participant, { foreignKey: "roster_api_id", sourceKey: "api_id" });
+    Player.hasMany(PlayerPoint, { foreignKey: "player_api_id", sourceKey: "api_id" });
+    Player.belongsTo(Region, { foreignKey: "shard_id", targetKey: "name" });
+    PlayerPoint.belongsTo(Player, { foreignKey: "player_api_id", targetKey: "api_id" });
+    PlayerPoint.belongsTo(GameMode, { foreignKey: "game_mode_id" });
+    PlayerPoint.belongsTo(Hero, { foreignKey: "hero_id" });
+    PlayerPoint.belongsTo(Series, { foreignKey: "series_id" });
+    PlayerPoint.belongsTo(Role, { foreignKey: "role_id" });
 
     return {
         Match, Roster, Participant, Player, Asset,
