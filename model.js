@@ -31,6 +31,7 @@ module.exports = (seq, Seq) => {
 
         // data stats
         ParticipantStats = seq.import("./models/participant_stats.js"),
+        ParticipantItems = seq.import("./models/participant_items.js"),
         ParticipantPhases = seq.import("./models/participant_phases.js"),
 
         // stats aggregations
@@ -72,7 +73,7 @@ module.exports = (seq, Seq) => {
         Team, TeamMembership, User,
         Tournament, TournamentParticipants,
         Item, Hero, Series, GameMode, Role, Filter, Skilltier, Build, Region,
-        ParticipantStats, ParticipantPhases,
+        ParticipantStats, ParticipantItems, ParticipantPhases,
         PlayerPoint, GlobalPoint,
         Gamer,
         Keys
