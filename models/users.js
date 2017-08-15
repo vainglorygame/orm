@@ -14,24 +14,22 @@ module.exports = function(sequelize, DataTypes) {
     },
     user_token: {
       type: DataTypes.CHAR(36),
-      allowNull: false,
-      defaultValue: '-1'
+      allowNull: true
     },
     player_api_id: {
       type: DataTypes.CHAR(36),
-      allowNull: true,
-      defaultValue: ''
+      allowNull: true
     },
     email: {
-      type: DataTypes.STRING(100),
-      allowNull: true
+      type: DataTypes.STRING(191),
+      allowNull: false
     },
     password: {
-      type: DataTypes.STRING(100),
-      allowNull: true
+      type: DataTypes.STRING(191),
+      allowNull: false
     },
     remember_token: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING(191),
       allowNull: true
     },
     access_type: {

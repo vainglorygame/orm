@@ -245,31 +245,31 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     item_grants: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.BLOB,
       allowNull: true
     },
     item_sells: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.BLOB,
       allowNull: true
     },
     ability_levels: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.BLOB,
       allowNull: true
     },
     ability_uses: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.BLOB,
       allowNull: true
     },
     ability_damage: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.BLOB,
       allowNull: true
     },
     item_uses: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.BLOB,
       allowNull: true
     },
     player_damage: {
-      type: DataTypes.STRING(191),
+      type: DataTypes.BLOB,
       allowNull: true
     },
     draft_position: {

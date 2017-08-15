@@ -119,6 +119,10 @@ module.exports = function(sequelize, DataTypes) {
     impact_score: {
       type: DataTypes.BIGINT,
       allowNull: true
+    },
+    surrender: {
+      type: "DOUBLE",
+      allowNull: true
     }
   }, {
     tableName: 'global_point',

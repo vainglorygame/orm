@@ -16,6 +16,14 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(191),
       allowNull: false
     },
+    tag_line_1: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    tag_line_2: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
     status: {
       type: DataTypes.ENUM('planned','active','finished'),
       allowNull: false
@@ -34,14 +42,6 @@ module.exports = function(sequelize, DataTypes) {
     },
     region: {
       type: DataTypes.STRING(191),
-      allowNull: true
-    },
-    tag_line_1: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    tag_line_2: {
-      type: DataTypes.STRING(255),
       allowNull: true
     }
   }, {

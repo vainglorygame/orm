@@ -23,7 +23,7 @@ module.exports = function(sequelize, DataTypes) {
     joined_on: {
       type: DataTypes.TIME,
       allowNull: false,
-      defaultValue: sequelize.fn('current_timestamp')
+      defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
     },
     status: {
       type: DataTypes.ENUM('pending','initiate','member','officer','leader','former','veteran'),
