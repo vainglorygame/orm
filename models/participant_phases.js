@@ -240,38 +240,6 @@ module.exports = function(sequelize, DataTypes) {
       type: "DOUBLE",
       allowNull: true
     },
-    items: {
-      type: DataTypes.STRING(191),
-      allowNull: true
-    },
-    item_grants: {
-      type: DataTypes.BLOB,
-      allowNull: true
-    },
-    item_sells: {
-      type: DataTypes.BLOB,
-      allowNull: true
-    },
-    ability_levels: {
-      type: DataTypes.BLOB,
-      allowNull: true
-    },
-    ability_uses: {
-      type: DataTypes.BLOB,
-      allowNull: true
-    },
-    ability_damage: {
-      type: DataTypes.BLOB,
-      allowNull: true
-    },
-    item_uses: {
-      type: DataTypes.BLOB,
-      allowNull: true
-    },
-    player_damage: {
-      type: DataTypes.BLOB,
-      allowNull: true
-    },
     draft_position: {
       type: DataTypes.INTEGER(11),
       allowNull: true
@@ -283,6 +251,78 @@ module.exports = function(sequelize, DataTypes) {
     pick: {
       type: DataTypes.INTEGER(11),
       allowNull: true
+    },
+    items: {
+      type: "BLOB",
+      allowNull: false
+    },
+    item_grants: {
+      type: "BLOB",
+      allowNull: false
+    },
+    item_sells: {
+      type: "BLOB",
+      allowNull: false
+    },
+    ability_a_use: {
+      type: DataTypes.INTEGER(5).UNSIGNED,
+      allowNull: false
+    },
+    ability_b_use: {
+      type: DataTypes.INTEGER(5).UNSIGNED,
+      allowNull: false
+    },
+    ability_c_use: {
+      type: DataTypes.INTEGER(5).UNSIGNED,
+      allowNull: false
+    },
+    ability_a_damage_true: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    ability_a_damage_dealt: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    ability_b_damage_true: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    ability_b_damage_dealt: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    ability_c_damage_true: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    ability_c_damage_dealt: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    ability_aa_damage_true: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    ability_aa_damage_dealt: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    ability_aacrit_damage_true: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    ability_aacrit_damage_dealt: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    item_uses: {
+      type: "BLOB",
+      allowNull: false
+    },
+    player_damage: {
+      type: "BLOB",
+      allowNull: false
     }
   }, {
     tableName: 'participant_phases',
