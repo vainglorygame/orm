@@ -20,6 +20,7 @@ module.exports = {
 
     "Ability__Grace__A": "Grace A",
     "Ability__Grace__AltAttack": "Grace AA",
+    "Ability__Grace__CritAttack": "Grace AAcrit",
     "Ability__Grace__B": "Grace B",
     "Ability__Grace__DefaultAttack": "Grace AA",
     "Ability__Reza__DefaultAttack": "Reza AA",
@@ -27,6 +28,12 @@ module.exports = {
     "Ability__Reza__CritAttack": "Reza AAcrit",
     "Ability__Reza__C_NetherformAttack": "Reza C",
     "Ability__Reza__C": "Reza C",
+    "Ability__Baptiste__DefaultAttack": "Baptiste AA",
+    "Ability__Baptiste__AltAttack": "Baptiste AA",
+    "Ability__Baptiste__CritAttack": "Baptiste AAcrit",
+    "Ability__Baptiste__EmpoweredDefaultAttack": "Baptiste perk",
+    "Ability__Baptiste__EmpoweredAltAttack": "Baptiste perk",
+    "Ability__Baptiste__EmpoweredCritAttack": "Baptiste perk",
     "Buff_Reza_B_EmpoweredAttack": "Reza B",
     "Buff_Reza_Perk_VolatileSparkControl": "Reza perk",
     "HERO_ABILITY_HERO042_A_NAME": "Grace A",
@@ -582,5 +589,6 @@ module.exports = {
     "BookOfEulogies": "Book of Eulogies",
     "Book Of Eulogies": "Book of Eulogies",
     "Eve Of Harvest": "Eve of Harvest",
-    "Candy - VO Taunt": "Voice over Taunt"
+    "Candy - VO Taunt": "Voice over Taunt",
+    "": " "
 }
