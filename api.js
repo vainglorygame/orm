@@ -69,6 +69,7 @@ module.exports.request = async (url, options, logger) => {
                     qs: options,
                     status: response.statusCode,
                     connection_start: response.timings.connect,
+                    connection_first: response.timings.response,
                     connection_end: response.timings.end,
                     ratelimit_remaining: parseInt(response.headers["x-ratelimit-remaining"])
                 });
