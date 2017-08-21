@@ -169,36 +169,100 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     ability_a_level: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
-      allowNull: true
+      type: DataTypes.BIGINT,
+      allowNull: false
     },
     ability_b_level: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
-      allowNull: true
+      type: DataTypes.BIGINT,
+      allowNull: false
     },
     ability_c_level: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
-      allowNull: true
+      type: DataTypes.BIGINT,
+      allowNull: false
     },
     hero_level: {
-      type: DataTypes.INTEGER(3).UNSIGNED,
-      allowNull: true
+      type: DataTypes.BIGINT,
+      allowNull: false
     },
-    kda_ratio: {
-      type: "DOUBLE(5,5)",
-      allowNull: true
+    items: {
+      type: "BLOB",
+      allowNull: false
     },
-    kill_participation: {
-      type: "DOUBLE(5,5)",
-      allowNull: true
+    item_grants: {
+      type: "BLOB",
+      allowNull: false
     },
-    cs_per_min: {
-      type: "DOUBLE(7,5)",
-      allowNull: true
+    item_sells: {
+      type: "BLOB",
+      allowNull: false
     },
-    kills_per_min: {
-      type: "DOUBLE(6,5)",
-      allowNull: true
+    ability_a_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_b_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_c_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_a_damage_true: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_a_damage_dealt: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_b_damage_true: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_b_damage_dealt: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_c_damage_true: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_c_damage_dealt: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_perk_damage_true: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_perk_damage_dealt: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_aa_damage_true: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_aa_damage_dealt: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_aacrit_damage_true: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    ability_aacrit_damage_dealt: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_uses: {
+      type: "BLOB",
+      allowNull: false
+    },
+    player_damage: {
+      type: "BLOB",
+      allowNull: false
     }
   }, {
     tableName: 'global_point_phase',

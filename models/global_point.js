@@ -123,6 +123,22 @@ module.exports = function(sequelize, DataTypes) {
     surrender: {
       type: "DOUBLE",
       allowNull: true
+    },
+    items: {
+      type: "BLOB",
+      allowNull: false
+    },
+    item_grants: {
+      type: "BLOB",
+      allowNull: false
+    },
+    item_uses: {
+      type: "BLOB",
+      allowNull: false
+    },
+    item_sells: {
+      type: "BLOB",
+      allowNull: false
     }
   }, {
     tableName: 'global_point',

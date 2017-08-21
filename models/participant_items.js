@@ -32,6 +32,10 @@ module.exports = function(sequelize, DataTypes) {
     item_sells: {
       type: "BLOB",
       allowNull: false
+    },
+    surrender: {
+      type: DataTypes.INTEGER(1),
+      allowNull: false
     }
   }, {
     tableName: 'participant_items',
