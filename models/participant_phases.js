@@ -300,6 +300,14 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: false
     },
+    ability_perk_damage_true: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
+    ability_perk_damage_dealt: {
+      type: DataTypes.INTEGER(10).UNSIGNED,
+      allowNull: false
+    },
     ability_aa_damage_true: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: false
