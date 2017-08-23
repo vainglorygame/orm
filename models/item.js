@@ -28,13 +28,9 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(191),
       allowNull: false
     },
-    active: {
-      type: DataTypes.STRING(191),
-      allowNull: false
-    },
-    passive: {
-      type: DataTypes.STRING(191),
-      allowNull: false
+    is_activable: {
+      type: DataTypes.INTEGER(1),
+      allowNull: true
     }
   }, {
     tableName: 'item',

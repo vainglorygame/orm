@@ -43,6 +43,18 @@ module.exports = function(sequelize, DataTypes) {
     region: {
       type: DataTypes.STRING(191),
       allowNull: true
+    },
+    owner: {
+      type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    registrations_open: {
+      type: DataTypes.INTEGER(1),
+      allowNull: true
+    },
+    roster_locked: {
+      type: DataTypes.INTEGER(1),
+      allowNull: true
     }
   }, {
     tableName: 'tournament',

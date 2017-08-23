@@ -124,20 +124,104 @@ module.exports = function(sequelize, DataTypes) {
       type: "DOUBLE",
       allowNull: true
     },
-    items: {
-      type: "BLOB",
+    item_001_use: {
+      type: DataTypes.BIGINT,
       allowNull: false
     },
-    item_grants: {
-      type: "BLOB",
+    item_004_use: {
+      type: DataTypes.BIGINT,
       allowNull: false
     },
-    item_uses: {
-      type: "BLOB",
+    item_014_use: {
+      type: DataTypes.BIGINT,
       allowNull: false
     },
-    item_sells: {
-      type: "BLOB",
+    item_015_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_017_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_018_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_020_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_024_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_025_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_026_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_028_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_029_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_039_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_041_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_043_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_048_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_049_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_050_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_057_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_063_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_066_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_068_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_069_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_070_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_071_use: {
+      type: DataTypes.BIGINT,
       allowNull: false
     }
   }, {

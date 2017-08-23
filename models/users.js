@@ -33,7 +33,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     access_type: {
-      type: DataTypes.ENUM('free','loyal','plus','premium'),
+      type: DataTypes.ENUM('free','loyal','plus','premium','admin','super_admin'),
       allowNull: false
     }
   }, {
