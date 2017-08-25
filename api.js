@@ -9,6 +9,7 @@ const Promise = require("bluebird"),
 
 const MADGLORY_TOKEN = process.env.MADGLORY_TOKEN,
     MADGLORY_URL = process.env.MADGLORY_URL || "https://api.dc01.gamelockerapp.com",
+    API_TIMEOUT = process.env.API_TIMEOUT || 20,  // seconds
     ERROR_LOG = process.env.ERROR_LOG || "./errors.json";
 if (MADGLORY_TOKEN == undefined) throw "Need an API token";
 
@@ -31,6 +32,7 @@ module.exports.request = async (url, options, logger) => {
                 gzip: true,
                 time: true,
                 forever: true,
+                timeout: API_TIMEOUT*1000,
                 strictSSL: true,
                 resolveWithFullResponse: true
             };
