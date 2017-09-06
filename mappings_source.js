@@ -472,6 +472,8 @@ module.exports = {
     "*1005_Item_CandyShop_Taunt*": "Taunt",
     "*1007_Item_CandyShop_VOTaunt*": "Voice over Taunt",
     "*Item_HalcyonPotion*": "Halcyon Potion",
+    "*Item_HealingFlask*": "Healing Flask",
+    "*Item_Spellsword*": "Spellsword",
     "*Item_WeaponBlade*": "Weapon Blade",
     "*Item_CrystalBit*": "Crystal Bit",
     "*Item_SwiftShooter*": "Swift Shooter",
