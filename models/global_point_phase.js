@@ -292,7 +292,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BIGINT,
       allowNull: false
     },
-    item_039_use: {
+    item_034_use: {
       type: DataTypes.BIGINT,
       allowNull: false
     },
@@ -313,6 +313,10 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     item_050_use: {
+      type: DataTypes.BIGINT,
+      allowNull: false
+    },
+    item_053_use: {
       type: DataTypes.BIGINT,
       allowNull: false
     },
