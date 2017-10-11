@@ -21,6 +21,10 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
     },
+    league_id: {
+      type: DataTypes.BIGINT,
+      allowNull: true
+    },
     name: {
       type: DataTypes.STRING(20),
       allowNull: false

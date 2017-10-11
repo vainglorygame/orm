@@ -230,7 +230,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     item_072_use: {
       type: DataTypes.BIGINT,
-      allowNull: true
+      allowNull: false
     }
   }, {
     tableName: 'global_point',

@@ -52,6 +52,10 @@ module.exports = function(sequelize, DataTypes) {
       type: "DOUBLE",
       allowNull: true
     },
+    trueskill_ranked_max: {
+      type: "DOUBLE",
+      allowNull: true
+    },
     trueskill_delta: {
       type: "DOUBLE",
       allowNull: true

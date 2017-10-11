@@ -331,6 +331,38 @@ module.exports = function(sequelize, DataTypes) {
     player_damage: {
       type: "BLOB",
       allowNull: false
+    },
+    heal_heal_hero: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_healed_hero: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_heal_other: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_healed_other: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_heal_hero: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_healed_hero: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_heal_other: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_healed_other: {
+      type: "DOUBLE",
+      allowNull: true
     }
   }, {
     tableName: 'participant_phases',

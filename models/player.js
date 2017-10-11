@@ -60,6 +60,22 @@ module.exports = function(sequelize, DataTypes) {
     elo: {
       type: "DOUBLE",
       allowNull: true
+    },
+    trueskill_casual_mu: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_casual_sigma: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_ranked_mu: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_ranked_sigma: {
+      type: "DOUBLE",
+      allowNull: true
     }
   }, {
     tableName: 'player',

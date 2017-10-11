@@ -36,6 +36,18 @@ module.exports = function(sequelize, DataTypes) {
     surrender: {
       type: DataTypes.INTEGER(1),
       allowNull: false
+    },
+    trueskill_ranked_mu: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_ranked_sigma: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    any_afk: {
+      type: DataTypes.INTEGER(3).UNSIGNED,
+      allowNull: true
     }
   }, {
     tableName: 'participant_items',

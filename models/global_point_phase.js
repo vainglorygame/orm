@@ -244,6 +244,38 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BIGINT,
       allowNull: false
     },
+    heal_heal_hero: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_healed_hero: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_heal_other: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_healed_other: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_heal_hero: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_healed_hero: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_heal_other: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_healed_other: {
+      type: "DOUBLE",
+      allowNull: true
+    },
     item_001_use: {
       type: DataTypes.BIGINT,
       allowNull: false
