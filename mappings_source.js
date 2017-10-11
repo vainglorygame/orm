@@ -603,5 +603,18 @@ module.exports = {
     "Book Of Eulogies": "Book of Eulogies",
     "Eve Of Harvest": "Eve of Harvest",
     "Candy - VO Taunt": "Voice over Taunt",
-    "": " "
+    "": " ",
+    "*Churnwalker*": "Churnwalker",
+    "HERO_ABILITY_CHURNWALKER_A_NAME": "Churnwalker A",
+    "HERO_ABILITY_CHURNWALKER_B_NAME": "Churnwalker B",
+    "HERO_ABILITY_CHURNWALKER_C_NAME": "Churnwalker C",
+    "Ability__Churnwalker__DefaultAttack": "Churnwalker AA",
+    "Ability__Churnwalker__AltAttack": "Churnwalker AA",
+    "Ability__Churnwalker__CritAttack": "Churnwalker AA crit",
+    "Ability__Churnwalker__A": "Churnwalker A",
+    "Ability__Churnwalker__B": "Churnwalker B",
+    "Ability__Churnwalker__C": "Churnwalker C",
+    "Buff_Churnwalker_ChainTether": "Churnwalker perk",
+    "*Item_DragonsEye*": "Dragon's Eye",
+    "*Item_Spellfire*": "Spellfire"
 }
