@@ -616,5 +616,7 @@ module.exports = {
     "Ability__Churnwalker__C": "Churnwalker C",
     "Buff_Churnwalker_ChainTether": "Churnwalker perk",
     "*Item_DragonsEye*": "Dragon's Eye",
-    "*Item_Spellfire*": "Spellfire"
+    "DragonsEye": "Dragon's Eye",
+    "*Item_Spellfire*": "Spellfire",
+    "Spellfire": "Spellfire"
 }
