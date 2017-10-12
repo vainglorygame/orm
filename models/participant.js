@@ -101,14 +101,6 @@ module.exports = function(sequelize, DataTypes) {
     nacl_score: {
       type: "DOUBLE",
       allowNull: true
-    },
-    trueskill_casual_mu: {
-      type: "DOUBLE",
-      allowNull: true
-    },
-    trueskill_casual_sigma: {
-      type: "DOUBLE",
-      allowNull: true
     }
   }, {
     tableName: 'participant',

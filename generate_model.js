@@ -2,7 +2,7 @@
 
 var SequelizeAuto = require("sequelize-auto")
 
-var auto = new SequelizeAuto("vainweb", "vainweb", "vainweb", {
+var auto = new SequelizeAuto("vaintest", "vaintest", "vaintest", {
     host: "localhost",
     dialect: "mariadb",
     directory: "models",
