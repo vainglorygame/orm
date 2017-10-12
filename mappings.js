@@ -13,12 +13,8 @@ module.exports = {
     map: mappings,
     // TODO wtf?
     isItem: (str) => str.indexOf("Item") != -1,
-    isAbility: (str) => {
-        if ( str.indexOf("Item") == -1 &&
-        (str.indexOf("Ability") != -1 ||
-            str.indexOf("ABILITY") != -1) ) {
-            if (!mappings.has(str)) console.error(str);
-            return true
-        } return false; },
+    isAbility: (str) => str.indexOf("Item") == -1 &&
+        (str.indexOf("Ability") == -1 ||
+         str.indexOf("ABILITY") != -1),
     isHero: (str) => str.indexOf("*") != -1 && str.indexOf("Item") == -1
 };
