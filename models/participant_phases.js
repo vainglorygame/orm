@@ -252,18 +252,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(11),
       allowNull: true
     },
-    items: {
-      type: "BLOB",
-      allowNull: false
-    },
-    item_grants: {
-      type: "BLOB",
-      allowNull: false
-    },
-    item_sells: {
-      type: "BLOB",
-      allowNull: false
-    },
     ability_a_use: {
       type: DataTypes.INTEGER(5).UNSIGNED,
       allowNull: false
@@ -363,6 +351,22 @@ module.exports = function(sequelize, DataTypes) {
     heal_rcvd_healed_other: {
       type: "DOUBLE",
       allowNull: true
+    },
+    item_grants: {
+      type: "BLOB",
+      allowNull: true
+    },
+    item_sells: {
+      type: "BLOB",
+      allowNull: true
+    },
+    items: {
+      type: "BLOB",
+      allowNull: true
+    },
+    item_grants_indorder: {
+      type: "BLOB",
+      allowNull: false
     }
   }, {
     tableName: 'participant_phases',

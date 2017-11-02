@@ -48,11 +48,11 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(11),
       allowNull: true
     },
-    win_points: {
+    round: {
       type: DataTypes.INTEGER(11),
       allowNull: true
     },
-    bonus_points: {
+    position: {
       type: DataTypes.INTEGER(11),
       allowNull: true
     }
