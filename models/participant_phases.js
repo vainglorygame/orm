@@ -364,7 +364,7 @@ module.exports = function(sequelize, DataTypes) {
       type: "BLOB",
       allowNull: true
     },
-    item_grants_indorder: {
+    item_grants_inorder: {
       type: "BLOB",
       allowNull: false
     }
