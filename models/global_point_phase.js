@@ -252,6 +252,14 @@ module.exports = function(sequelize, DataTypes) {
       type: "DOUBLE",
       allowNull: true
     },
+    heal_heal_ally: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_healed_ally: {
+      type: "DOUBLE",
+      allowNull: true
+    },
     heal_heal_other: {
       type: "DOUBLE",
       allowNull: true
@@ -265,6 +273,18 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     heal_rcvd_healed_hero: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_healed_vamp: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_heal_ally: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_healed_ally: {
       type: "DOUBLE",
       allowNull: true
     },

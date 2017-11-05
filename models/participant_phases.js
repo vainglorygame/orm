@@ -328,6 +328,14 @@ module.exports = function(sequelize, DataTypes) {
       type: "DOUBLE",
       allowNull: true
     },
+    heal_heal_ally: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_healed_ally: {
+      type: "DOUBLE",
+      allowNull: true
+    },
     heal_heal_other: {
       type: "DOUBLE",
       allowNull: true
@@ -344,6 +352,18 @@ module.exports = function(sequelize, DataTypes) {
       type: "DOUBLE",
       allowNull: true
     },
+    heal_rcvd_healed_vamp: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_heal_ally: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    heal_rcvd_healed_ally: {
+      type: "DOUBLE",
+      allowNull: true
+    },
     heal_rcvd_heal_other: {
       type: "DOUBLE",
       allowNull: true
@@ -356,6 +376,10 @@ module.exports = function(sequelize, DataTypes) {
       type: "BLOB",
       allowNull: true
     },
+    item_grants_inorder: {
+      type: "BLOB",
+      allowNull: true
+    },
     item_sells: {
       type: "BLOB",
       allowNull: true
@@ -363,10 +387,6 @@ module.exports = function(sequelize, DataTypes) {
     items: {
       type: "BLOB",
       allowNull: true
-    },
-    item_grants_inorder: {
-      type: "BLOB",
-      allowNull: false
     }
   }, {
     tableName: 'participant_phases',
