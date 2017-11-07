@@ -619,5 +619,6 @@ module.exports = {
     "DragonsEye": "Dragon's Eye",
     "*Item_Spellfire*": "Spellfire",
     "Spellfire": "Spellfire",
-    "Ability__FortressMinion__CritAttack": "Fortress AA"
+    "Ability__FortressMinion__CritAttack": "Fortress AA",
+    "*Lorelei*": "Lorelei"
 }
