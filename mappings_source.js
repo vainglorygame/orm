@@ -620,5 +620,10 @@ module.exports = {
     "*Item_Spellfire*": "Spellfire",
     "Spellfire": "Spellfire",
     "Ability__FortressMinion__CritAttack": "Fortress AA",
-    "*Lorelei*": "Lorelei"
+    "*Lorelei*": "Lorelei",
+    "HERO_ABILITY_LORELAI_A_NAME": "Lorelei A",
+    "HERO_ABILITY_LORELAI_B_NAME": "Lorelei B",
+    "HERO_ABILITY_LORELAI_C_NAME": "Lorelei C",
+    "Buff_Item_StormguardBanner_Damage": "Stormguard Banner",
+    "Buff_Item_Spellfire_Damage": "Spellfire"
 }
