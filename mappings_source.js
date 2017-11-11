@@ -625,5 +625,8 @@ module.exports = {
     "HERO_ABILITY_LORELAI_B_NAME": "Lorelei B",
     "HERO_ABILITY_LORELAI_C_NAME": "Lorelei C",
     "Buff_Item_StormguardBanner_Damage": "Stormguard Banner",
-    "Buff_Item_Spellfire_Damage": "Spellfire"
+    "Buff_Item_Spellfire_Damage": "Spellfire",
+    "Buff_Lorelai_FishFoodDamagePerSecond": "Lorelei A",
+    "Buff_Lorelai_FishFoodDelay": "Lorelei A",
+    "Buff_Reza_C_DamagePostTeleport": "Reza C"
 }
