@@ -14,11 +14,16 @@ module.exports = {
     // TODO wtf?
     isItem: (str) => str.indexOf("Item") != -1,
     isAbility: (str) => {
-        if ( str.indexOf("Item") == -1 &&
+        if (str.indexOf("Item") == -1 &&
         (str.indexOf("Ability") != -1 ||
             str.indexOf("ABILITY") != -1) ) {
-            if (!mappings.has(str)) console.error(str);
             return true
         } return false; },
+    crashIfBullshit: (str) => {
+        if(!mappings.has(str)) {
+            throw "unknown API string `" + str + "`";
+        }
+        return true;
+    },
     isHero: (str) => str.indexOf("*") != -1 && str.indexOf("Item") == -1
 };
