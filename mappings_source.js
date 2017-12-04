@@ -628,5 +628,6 @@ module.exports = {
     "Buff_Item_Spellfire_Damage": "Spellfire",
     "Buff_Lorelai_FishFoodDamagePerSecond": "Lorelai A",
     "Buff_Lorelai_FishFoodDelay": "Lorelai A",
-    "Buff_Reza_C_DamagePostTeleport": "Reza C"
+    "Buff_Reza_C_DamagePostTeleport": "Reza C",
+    "*Varya*": "Varya"
 }
