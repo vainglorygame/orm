@@ -41,10 +41,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(11),
       allowNull: false
     },
-    lifetime_gold: {
-      type: "DOUBLE(8,2)",
-      allowNull: false
-    },
     skill_tier: {
       type: DataTypes.INTEGER(6),
       allowNull: true
@@ -67,6 +63,34 @@ module.exports = function(sequelize, DataTypes) {
     },
     trueskill_ranked_sigma: {
       type: "DOUBLE",
+      allowNull: true
+    },
+    rank_points_ranked: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    rank_points_blitz: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    played_ranked: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    played_casual: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    played_blitz: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    played_aral: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    guild_tag: {
+      type: DataTypes.STRING(191),
       allowNull: true
     }
   }, {

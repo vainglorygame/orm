@@ -10,6 +10,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "bluebird": "^3.5.0",
+    "lodash.snakecase": "^4.1.1",
     "mysql": "^2.14.1",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",

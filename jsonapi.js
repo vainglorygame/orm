@@ -8,7 +8,7 @@ var _isArray = require('lodash/isArray');
 var _map = require('lodash/map');
 var _partial = require('lodash/partial');
 var _each = require('lodash/each');
-var _camelCase = require('lodash/camelCase');
+var _snakecase = require('lodash/snakeCase');
 var _memoize = require('lodash/memoize');
 var _chain = require('lodash/chain');
 var _find = require('lodash/find');
@@ -28,13 +28,15 @@ exports.parse = (obj) => {
 }
 
 function parseResourceDataObject(response, data) {
-    var result = _clone(data);
+    var result = {};
+    Object.defineProperty(result, "id", { value: data.id, enumerable: true });
+    Object.defineProperty(result, "type", { value: data.type, enumerable: true });
     _each(data.attributes, function(value, name) {
-        Object.defineProperty(result, _camelCase(name), { value: value, enumerable: true });
+        Object.defineProperty(result, _snakecase(name), { value: value, enumerable: true });
     });
     _each(data.relationships, function(value, name) {
         if (_isArray(value.data)) {
-            Object.defineProperty(result, _camelCase(name), {
+            Object.defineProperty(result, _snakecase(name), {
                 get: _memoize(function() {
                     const related = _map(value.data, function(related) {
                         var resdata = _find(response.included, function(included) {
@@ -48,7 +50,7 @@ function parseResourceDataObject(response, data) {
                 enumerable: true
             });
         } else if (value.data) {
-            Object.defineProperty(result, _camelCase(name), {
+            Object.defineProperty(result, _snakecase(name), {
                 get: _memoize(function() {
                     var resdata = _find(response.included, function(included) {
                         return included.id === value.data.id && included.type === value.data.type;

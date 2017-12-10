@@ -45,6 +45,10 @@ module.exports = function(sequelize, DataTypes) {
       type: "DOUBLE",
       allowNull: true
     },
+    trueskill_ranked_delta: {
+      type: "DOUBLE",
+      allowNull: true
+    },
     any_afk: {
       type: DataTypes.INTEGER(3).UNSIGNED,
       allowNull: true
