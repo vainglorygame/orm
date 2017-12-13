@@ -53,10 +53,6 @@ module.exports = function(sequelize, DataTypes) {
       type: "DOUBLE",
       allowNull: true
     },
-    elo: {
-      type: "DOUBLE",
-      allowNull: true
-    },
     trueskill_ranked_mu: {
       type: "DOUBLE",
       allowNull: true
@@ -66,11 +62,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     rank_points_ranked: {
-      type: DataTypes.INTEGER(11),
+      type: "DOUBLE",
       allowNull: true
     },
     rank_points_blitz: {
-      type: DataTypes.INTEGER(11),
+      type: "DOUBLE",
       allowNull: true
     },
     played_ranked: {
@@ -82,6 +78,10 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     played_blitz: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    played_blitz_rounds: {
       type: DataTypes.INTEGER(11),
       allowNull: true
     },
