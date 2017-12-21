@@ -629,5 +629,15 @@ module.exports = {
     "Buff_Lorelai_FishFoodDamagePerSecond": "Lorelai A",
     "Buff_Lorelai_FishFoodDelay": "Lorelai A",
     "Buff_Reza_C_DamagePostTeleport": "Reza C",
-    "*Varya*": "Varya"
+    "*Varya*": "Varya",
+    "casual": "casual",
+    "ranked": "ranked",
+    "private": "priv_blind",
+    "private_party_draft_match": "priv_draft",
+    "blitz_pvp_ranked": "blitz",
+    "private_party_blitz_match": "priv_blitz",
+    "casual_aral": "br",
+    "private_party_aral_match": "priv_br",
+    "blitz_rounds_pvp_casual": "onslaught",
+    "private_party_blitz_rounds_match": "priv_onslaught"
 }
