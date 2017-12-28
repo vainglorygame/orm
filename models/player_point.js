@@ -48,30 +48,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BIGINT,
       allowNull: false
     },
-    trueskill_max: {
-      type: "DOUBLE",
-      allowNull: true
-    },
-    trueskill_ranked_max: {
-      type: "DOUBLE",
-      allowNull: true
-    },
-    trueskill_delta: {
-      type: "DOUBLE",
-      allowNull: true
-    },
-    trueskill_mu: {
-      type: "DOUBLE",
-      allowNull: true
-    },
-    trueskill_sigma: {
-      type: "DOUBLE",
-      allowNull: true
-    },
-    elo: {
-      type: "DOUBLE",
-      allowNull: true
-    },
     kills: {
       type: DataTypes.INTEGER(10).UNSIGNED,
       allowNull: true

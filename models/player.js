@@ -61,14 +61,6 @@ module.exports = function(sequelize, DataTypes) {
       type: "DOUBLE",
       allowNull: true
     },
-    rank_points_ranked: {
-      type: "DOUBLE",
-      allowNull: true
-    },
-    rank_points_blitz: {
-      type: "DOUBLE",
-      allowNull: true
-    },
     played_ranked: {
       type: DataTypes.INTEGER(11),
       allowNull: true
@@ -81,16 +73,48 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(11),
       allowNull: true
     },
-    played_blitz_rounds: {
-      type: DataTypes.INTEGER(11),
-      allowNull: true
-    },
     played_aral: {
       type: DataTypes.INTEGER(11),
       allowNull: true
     },
     guild_tag: {
       type: DataTypes.STRING(191),
+      allowNull: true
+    },
+    rank_points_ranked: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    rank_points_blitz: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    played_blitz_rounds: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    trueskill_casual_mu: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_casual_sigma: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_blitz_mu: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_blitz_sigma: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_br_mu: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_br_sigma: {
+      type: "DOUBLE",
       allowNull: true
     }
   }, {

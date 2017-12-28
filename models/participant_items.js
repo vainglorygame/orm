@@ -48,6 +48,30 @@ module.exports = function(sequelize, DataTypes) {
     any_afk: {
       type: DataTypes.INTEGER(3).UNSIGNED,
       allowNull: true
+    },
+    trueskill_casual_mu: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_casual_sigma: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_blitz_mu: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_blitz_sigma: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_br_mu: {
+      type: "DOUBLE",
+      allowNull: true
+    },
+    trueskill_br_sigma: {
+      type: "DOUBLE",
+      allowNull: true
     }
   }, {
     tableName: 'participant_items',
