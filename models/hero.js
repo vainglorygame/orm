@@ -22,7 +22,8 @@ module.exports = function(sequelize, DataTypes) {
     },
     name: {
       type: DataTypes.STRING(191),
-      allowNull: false
+      allowNull: false,
+      unique: true
     },
     api_name: {
       type: DataTypes.STRING(191),

@@ -25,6 +25,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TIME,
       allowNull: true
     },
+    last_crunch_id: {
+      type: DataTypes.BIGINT,
+      allowNull: true
+    },
     last_update: {
       type: DataTypes.TIME,
       allowNull: true
