@@ -28,6 +28,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.CHAR(36),
       allowNull: false
     },
+    match_api_id: {
+      type: DataTypes.CHAR(36),
+      allowNull: false
+    },
     dmg_true: {
       type: "DOUBLE",
       allowNull: true
