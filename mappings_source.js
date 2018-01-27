@@ -645,7 +645,14 @@ module.exports = {
     "*Item_TotemEnhancer*": "Boosted Cam",
     "*Item_TotemBuffer*": "Buffed Cam",
     "*Item_FlareGun_Beta*": "Flare Gun beta",
-    "*Item_WarpGenerator*": "Teleporter Boots",
+    "*Item_WarpGenerator*": "Teleport Boots",
+    "Vision Totem": "Scout Cam",
+    "Totem Multiplier": "Multi-Cam",
+    "Totem Enhancer": "Boosted Cam",
+    "Totem Buffer": "Buffed Cam",
+    "Flare Gun Beta": "Flare Gun beta",
+    "Warp Generator": "Teleport Boots",
     "5v5_pvp_casual": "5v5_casual",
-    "5v5_pvp_ranked": "5v5_ranked"
+    "5v5_pvp_ranked": "5v5_ranked",
+    "private_party_vg_5v5": "priv_5v5_blind"
 }
