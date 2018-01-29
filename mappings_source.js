@@ -639,5 +639,13 @@ module.exports = {
     "casual_aral": "br",
     "private_party_aral_match": "priv_br",
     "blitz_rounds_pvp_casual": "onslaught",
-    "private_party_blitz_rounds_match": "priv_onslaught"
+    "private_party_blitz_rounds_match": "priv_onslaught",
+    "*Item_VisionTotem*": "Scout Cam",
+    "*Item_TotemMultiplier*": "Multi-Cam",
+    "*Item_TotemEnhancer*": "Boosted Cam",
+    "*Item_TotemBuffer*": "Buffed Cam",
+    "*Item_FlareGun_Beta*": "Flare Gun beta",
+    "*Item_WarpGenerator*": "Teleporter Boots",
+    "5v5_pvp_casual": "5v5_casual",
+    "5v5_pvp_ranked": "5v5_ranked"
 }
