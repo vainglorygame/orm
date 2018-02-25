@@ -73,6 +73,14 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER(11),
       allowNull: true
     },
+    played_ranked_5v5: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
+    played_casual_5v5: {
+      type: DataTypes.INTEGER(11),
+      allowNull: true
+    },
     played_blitz: {
       type: DataTypes.INTEGER(11),
       allowNull: true
